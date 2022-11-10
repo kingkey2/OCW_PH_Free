@@ -173,22 +173,24 @@ string Version = EWinWeb.Version;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>Lucky Fanta - Most popular online casino</title>
+    <title>Lucky Sprite - Most popular online casino</title>
     <meta name='keywords' content="Casino、Slot、Amusement、Game、Auto Fast Deposits and Withdrawals" />
     <meta name='description' content="Partners with a wide variety of well-known game brands, we provide fast deposit and withdrawal options, so you can play and have fun whenever you want!" />
-    <meta property="og:site_name" content="Lucky Fanta" />
-    <meta property="og:title" content="Most popular online casino - Lucky Fanta" />
+    <meta property="og:site_name" content="Lucky Sprite" />
+    <meta property="og:title" content="Most popular online casino - Lucky Sprite" />
     <meta property="og:Keyword" content="Auto Fast Deposits and Withdrawals" />
     <meta property="og:description" content="Partners with a wide variety of well-known game brands, we provide fast deposit and withdrawal options, so you can play and have fun whenever you want!" />
 
-    <meta property="og:url" content="https://www.free-maharaja.com/" />
+    <%--<meta property="og:url" content="https://www.free-maharaja.com/" />--%>
     <!--日文圖片-->
-    <meta property="og:image" content="https://www.free-maharaja.com/images/share_pic.png" />
+    <%--<meta property="og:image" content="https://www.free-maharaja.com/images/share_pic.png" />--%>
     <meta property="og:type" content="website" />
     <!-- Share image -->
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="bookmark" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/share_pic.png"/>
     <!--日文圖片-->
     <link rel="image_src" href="https://www.free-maharaja.com/images/share_pic.png">
-    <link rel="shortcut icon" href="images/share_pic.png">
     <link rel="stylesheet" href="css/basic.min.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
@@ -2463,40 +2465,40 @@ string Version = EWinWeb.Version;
           <section class="section-webDesc">
             <div class="container">
                 <div class="section-Wrapper">
-                    <h2 class="sec-webDesc-title language_replace">Fanta Free Version Debut</h2>
-                    <p class="language_replace">No matter if you are a beginner who has never played a Fanta game or you want to learn what games Fanta has, you can now enjoy free games in Fanta Free Edition with no cost involved. Fanta Free Edition is a completely free gaming site that can be accessed by anyone.</p>
+                    <h2 class="sec-webDesc-title language_replace">Sprite Free Version Debut</h2>
+                    <p class="language_replace">No matter if you are a beginner who has never played a Sprite game or you want to learn what games Sprite has, you can now enjoy free games in Sprite Free Edition with no cost involved. Sprite Free Edition is a completely free gaming site that can be accessed by anyone.</p>
                 </div>
                 <div class="section-Wrapper">
-                    <h2 class="sec-webDesc-title language_replace">What is Fanta Free Edition?</h2>
-                    <p class="language_replace">Fanta has a legally licensed professional license. As part of the free version, we have also carefully selected the most popular and trending games of the moment. Here, you will be able to experience a variety of game types.</p>
+                    <h2 class="sec-webDesc-title language_replace">What is Sprite Free Edition?</h2>
+                    <p class="language_replace">Sprite has a legally licensed professional license. As part of the free version, we have also carefully selected the most popular and trending games of the moment. Here, you will be able to experience a variety of game types.</p>
                 </div>
                 <div class="section-Wrapper">
                     <h2 class="sec-webDesc-title language_replace">What kind of games can be played?</h2>
-                    <p class="language_replace">There are more than 60 types of games available in Fanta Free Edition. Additionally, there are popular table games such as roulette and blackjack in addition to the addictive slot machines with exciting special effects.</p>
+                    <p class="language_replace">There are more than 60 types of games available in Sprite Free Edition. Additionally, there are popular table games such as roulette and blackjack in addition to the addictive slot machines with exciting special effects.</p>
                     <ul class="game-type-list">
                         <li class="game-type-item">
                             <div class="img-crop">
                                 <img src="images/icon/icon-slot-red.svg" alt="">
                             </div>
                             <h3 class="game-type-name language_replace">Free Edition Slots</h3>
-                            <p class="game-type-desc language_replace">In Fanta Free Edition, slots are one of the most popular games. The gorgeous and cool effects of the slot machine game, as well as the fantastic bonuses that can be won, are all part of its appeal. You simply need to click the "SPIN" button to begin the game, which is very simple to play. It is therefore recommended to all beginners.</p>
+                            <p class="game-type-desc language_replace">In Sprite Free Edition, slots are one of the most popular games. The gorgeous and cool effects of the slot machine game, as well as the Spritestic bonuses that can be won, are all part of its appeal. You simply need to click the "SPIN" button to begin the game, which is very simple to play. It is therefore recommended to all beginners.</p>
                         </li>
                         <li class="game-type-item">
                             <div class="img-crop">
                                 <img src="images/icon/icon-poker-red.svg" alt="">
                             </div>
                             <h3 class="game-type-name language_replace">Free Table Games</h3>
-                            <p class="game-type-desc language_replace">There are also a number of table games featured in the free version of Fanta, primarily card games and roulette with numbered discs. You may also choose from table games that are hosted by the dealer, in addition to those that can be played alone at your own pace. It is your choice how you wish to play.</p>
+                            <p class="game-type-desc language_replace">There are also a number of table games featured in the free version of Sprite, primarily card games and roulette with numbered discs. You may also choose from table games that are hosted by the dealer, in addition to those that can be played alone at your own pace. It is your choice how you wish to play.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="section-Wrapper">
                     <h2 class="sec-webDesc-title language_replace">Enjoy the game anytime, anywhere!</h2>
-                    <p class="sec-webDesc-subtitle language_replace">To begin playing for free in Fanta Free Edition, simply click on the game of your choice. Additionally, you can play on your smartphone or tablet, as well as on a PC. Enjoy the free version of Fanta!</p>
+                    <p class="sec-webDesc-subtitle language_replace">To begin playing for free in Sprite Free Edition, simply click on the game of your choice. Additionally, you can play on your smartphone or tablet, as well as on a PC. Enjoy the free version of Sprite!</p>
                 </div>
                 <div class="section-Wrapper">
                     <h2 class="sec-webDesc-title language_replace">Registration is fast and easy!</h2>
-                    <p class="language_replace">Click "Register for Free", enter your mobile phone number and password, and you can quickly complete the registration process. In less than a minute, you can play all of the games in Fanta Free Edition!</p>
+                    <p class="language_replace">Click "Register for Free", enter your mobile phone number and password, and you can quickly complete the registration process. In less than a minute, you can play all of the games in Sprite Free Edition!</p>
                 </div>
             </div>
           </section>
@@ -2675,13 +2677,13 @@ string Version = EWinWeb.Version;
                             <iframe src="https://licensing.gaming-curacao.com/validator/?lh=73f82515ca83aaf2883e78a6c118bea3&template=tseal" width="150" height="50" style="border: none;"></iframe>
                         </div>
                         <div class="company-address">
-                            <p class="address language_replace">Lucky Fanta is owned and operated by Online Chip World Co. N.V.（Registration address：Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curacao.) Obtained the license issued by the Curacao government and the registration number:#365 / JAZ recognized, and based on this as a standard.</p>
+                            <p class="address language_replace">Lucky Sprite is owned and operated by Online Chip World Co. N.V.（Registration address：Zuikertuintjeweg Z/N (Zuikertuin Tower), Willemstad, Curacao.) Obtained the license issued by the Curacao government and the registration number:#365 / JAZ recognized, and based on this as a standard.</p>
                         </div>
                     </div>
 
 
                     <div class="footer-copyright">
-                        <p class="language_replace">Copyright © 2022 Lucky Fanta. All Rights Reserved.</p>
+                        <p class="language_replace">Copyright © 2022 Lucky Sprite. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
