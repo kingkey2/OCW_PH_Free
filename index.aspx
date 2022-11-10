@@ -1,169 +1,169 @@
 <%@ Page Language="C#"%>
 <%
 
-    string Token;
-    int RValue;
-    Random R = new Random();
-    string Lang = "CHT";
-    string SID = string.Empty;
-    string CT = string.Empty;
-    string PCode = string.Empty;
-    int GoEwinLogin=0;
-    string Version = EWinWeb.Version;
-    string LoginFailMessage = "";
-    if (CodingControl.FormSubmit()) {
-        string LoginGUID = Request["LoginGUID"];
-        string LoginPassword = Request["LoginPassword"];
-        string LoginAccount = Request["LoginAccount"];
-     
-
-        Newtonsoft.Json.Linq.JObject obj_FingerPrint = new Newtonsoft.Json.Linq.JObject();
-
-        string UserIP = CodingControl.GetUserIP();
-        EWin.Login.LoginResult LoginAPIResult;
-        EWin.Login.LoginAPI LoginAPI = new EWin.Login.LoginAPI();
+//string Token;
+//int RValue;
+//Random R = new Random();
+//string Lang = "ENG";
+//string SID = string.Empty;
+//string CT = string.Empty;
+//string PCode = string.Empty;
+//int GoEwinLogin=0;
+string Version = EWinWeb.Version;
+//string LoginFailMessage = "";
+//if (CodingControl.FormSubmit()) {
+//    string LoginGUID = Request["LoginGUID"];
+//    string LoginPassword = Request["LoginPassword"];
+//    string LoginAccount = Request["LoginAccount"];
 
 
-        RValue = R.Next(100000, 9999999);
-        Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
+//    Newtonsoft.Json.Linq.JObject obj_FingerPrint = new Newtonsoft.Json.Linq.JObject();
 
-        LoginAPIResult = LoginAPI.UserLoginByCustomValidate(Token, LoginAccount, LoginPassword, EWinWeb.CompanyCode, UserIP);
-
-
-        if (LoginAPIResult.ResultState == EWin.Login.enumResultState.OK) {
-
-            string EwinCallBackUrl;
-            if ( CodingControl.GetIsHttps())
-            {
-                EwinCallBackUrl =  "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-            }
-            else {
-                EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-            }
-
-            Response.SetCookie(new HttpCookie("RecoverToken", LoginAPIResult.RecoverToken) { Expires = System.DateTime.Parse("2038/12/31") });
-            Response.SetCookie(new HttpCookie("LoginAccount", LoginAccount) { Expires = System.DateTime.Parse("2038/12/31") });
-            Response.SetCookie(new HttpCookie("SID",LoginAPIResult.SID));
-            Response.SetCookie(new HttpCookie("CT", LoginAPIResult.CT));
-            Response.Redirect("RefreshParent.aspx?index.aspx");
-
-        } else {
-            LoginFailMessage = LoginAPIResult.Message;
-            //Response.Write("<script>var defalutLoginAccount = '" + LoginAccount +"'; var defaultError = function(){ window.parent.showMessageOK('', mlp.getLanguageKey('登入失敗'),function () { })};</script>");
-        }
-    }
+//    string UserIP = CodingControl.GetUserIP();
+//    EWin.Login.LoginResult LoginAPIResult;
+//    EWin.Login.LoginAPI LoginAPI = new EWin.Login.LoginAPI();
 
 
-    if (string.IsNullOrEmpty(Request["SID"]) == false)
-    {
-        SID = Request["SID"];
-    }
+//    RValue = R.Next(100000, 9999999);
+//    Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
 
-    if (string.IsNullOrEmpty(Request["CT"]) == false)
-        CT = Request["CT"];
-
-    if (string.IsNullOrEmpty(Request["GoEwinLogin"]) == false) {
-        GoEwinLogin = int.Parse(Request["GoEwinLogin"]);
-    }
-
-    if (string.IsNullOrEmpty(Request["PCode"]) == false) {
-        PCode = Request["PCode"];
-    }
-
-    if (GoEwinLogin == 1) {
-        string EwinCallBackUrl;
-
-        if (CodingControl.GetIsHttps()) {
-            EwinCallBackUrl = "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-        } else {
-            EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-        }
-        Response.Redirect(EWinWeb.EWinGameUrl + "/Game/Login.aspx?CT=" +   HttpUtility.UrlEncode(CT)   + "&KeepLogin=0"  + "&Action=Custom" + "&Callback=" + HttpUtility.UrlEncode(EwinCallBackUrl) + "&CallbackHash=" + CodingControl.GetMD5(EwinCallBackUrl + EWinWeb.PrivateKey, false));
-    }
+//    LoginAPIResult = LoginAPI.UserLoginByCustomValidate(Token, LoginAccount, LoginPassword, EWinWeb.CompanyCode, UserIP);
 
 
+//    if (LoginAPIResult.ResultState == EWin.Login.enumResultState.OK) {
 
-    EWin.Lobby.LobbyAPI lobbyAPI = new EWin.Lobby.LobbyAPI();
+//        string EwinCallBackUrl;
+//        if ( CodingControl.GetIsHttps())
+//        {
+//            EwinCallBackUrl =  "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+//        }
+//        else {
+//            EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+//        }
 
-    RValue = R.Next(100000, 9999999);
-    Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
+//        Response.SetCookie(new HttpCookie("RecoverToken", LoginAPIResult.RecoverToken) { Expires = System.DateTime.Parse("2038/12/31") });
+//        Response.SetCookie(new HttpCookie("LoginAccount", LoginAccount) { Expires = System.DateTime.Parse("2038/12/31") });
+//        Response.SetCookie(new HttpCookie("SID",LoginAPIResult.SID));
+//        Response.SetCookie(new HttpCookie("CT", LoginAPIResult.CT));
+//        Response.Redirect("RefreshParent.aspx?index.aspx");
 
-    if (string.IsNullOrEmpty(Request["Lang"]))
-    {
-        string userLang = CodingControl.GetDefaultLanguage();
+//    } else {
+//        LoginFailMessage = LoginAPIResult.Message;
+//        //Response.Write("<script>var defalutLoginAccount = '" + LoginAccount +"'; var defaultError = function(){ window.parent.showMessageOK('', mlp.getLanguageKey('登入失敗'),function () { })};</script>");
+//    }
+//}
 
-        if (userLang.ToUpper() == "zh-TW".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-HK".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-MO".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-CHT".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-CHS".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-SG".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh-CN".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "zh".ToUpper())
-        {
-            Lang = "CHT";
-        }
-        else if (userLang.ToUpper() == "en-US".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "en-CA".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "en-PH".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "en".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "ko-KR".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "ko-KP".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "ko".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else if (userLang.ToUpper() == "ja".ToUpper())
-        {
-            Lang = "JPN";
-        }
-        else { Lang = "JPN"; }
-    }
-    else
-    {
-        Lang = Request["Lang"];
 
-        Lang = Lang.ToUpper();
-    }
+//if (string.IsNullOrEmpty(Request["SID"]) == false)
+//{
+//    SID = Request["SID"];
+//}
+
+//if (string.IsNullOrEmpty(Request["CT"]) == false)
+//    CT = Request["CT"];
+
+//if (string.IsNullOrEmpty(Request["GoEwinLogin"]) == false) {
+//    GoEwinLogin = int.Parse(Request["GoEwinLogin"]);
+//}
+
+//if (string.IsNullOrEmpty(Request["PCode"]) == false) {
+//    PCode = Request["PCode"];
+//}
+
+//if (GoEwinLogin == 1) {
+//    string EwinCallBackUrl;
+
+//    if (CodingControl.GetIsHttps()) {
+//        EwinCallBackUrl = "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+//    } else {
+//        EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+//    }
+//    Response.Redirect(EWinWeb.EWinGameUrl + "/Game/Login.aspx?CT=" +   HttpUtility.UrlEncode(CT)   + "&KeepLogin=0"  + "&Action=Custom" + "&Callback=" + HttpUtility.UrlEncode(EwinCallBackUrl) + "&CallbackHash=" + CodingControl.GetMD5(EwinCallBackUrl + EWinWeb.PrivateKey, false));
+//}
+
+
+
+//EWin.Lobby.LobbyAPI lobbyAPI = new EWin.Lobby.LobbyAPI();
+
+//RValue = R.Next(100000, 9999999);
+//Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
+
+//if (string.IsNullOrEmpty(Request["Lang"]))
+//{
+//    string userLang = CodingControl.GetDefaultLanguage();
+
+//    if (userLang.ToUpper() == "zh-TW".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-HK".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-MO".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-CHT".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-CHS".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-SG".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh-CN".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "zh".ToUpper())
+//    {
+//        Lang = "CHT";
+//    }
+//    else if (userLang.ToUpper() == "en-US".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "en-CA".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "en-PH".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "en".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "ko-KR".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "ko-KP".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "ko".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else if (userLang.ToUpper() == "ja".ToUpper())
+//    {
+//        Lang = "ENG";
+//    }
+//    else { Lang = "ENG"; }
+//}
+//else
+//{
+//    Lang = Request["Lang"];
+
+//    Lang = Lang.ToUpper();
+//}
 
 %>
 <!doctype html>
@@ -248,17 +248,14 @@
         EWinGameUrl: "<%=EWinWeb.EWinGameUrl %>",
         MainCurrencyType: "<%=EWinWeb.MainCurrencyType %>",
         RegisterCurrencyType: "<%=EWinWeb.RegisterCurrencyType %>",
-        SID: "<%=SID%>",
-        CT: "<%=CT%>",
         UserLogined: false,
         FirstLoaded: false,
-        Lang: "<%=Lang%>",
+        Lang: "ENG",
         UserInfo: null,
         DeviceType: getOS(),
         IsOpenGame: false
     };
-    var PCode = "<%=PCode%>";
-
+ 
     var jsonGames = [
         {
             GameName: '36',
@@ -718,121 +715,121 @@
         }
     ];
 
-    function eyeTogger() {
-        if ($('#login_Password').attr('type') == 'password') {
-            //  <!-- class切換=>icon-eye-off/icon-eye -->
-            $('#eyeTogger_i').removeClass('icon-eye-off');
-            $('#eyeTogger_i').addClass('icon-eye');
-            $('#login_Password').attr('type', 'text');
-        } else {
-            $('#eyeTogger_i').addClass('icon-eye-off');
-            $('#eyeTogger_i').removeClass('icon-eye');
-            $('#login_Password').attr('type', 'password');
-        }
-    }
+    //function eyeTogger() {
+    //    if ($('#login_Password').attr('type') == 'password') {
+    //        //  <!-- class切換=>icon-eye-off/icon-eye -->
+    //        $('#eyeTogger_i').removeClass('icon-eye-off');
+    //        $('#eyeTogger_i').addClass('icon-eye');
+    //        $('#login_Password').attr('type', 'text');
+    //    } else {
+    //        $('#eyeTogger_i').addClass('icon-eye-off');
+    //        $('#eyeTogger_i').removeClass('icon-eye');
+    //        $('#login_Password').attr('type', 'password');
+    //    }
+    //}
 
-    function eyeTogger2() {
-        if ($('#createAccount_Password').attr('type') == 'password') {
-            //  <!-- class切換=>icon-eye-off/icon-eye -->
-            $('#eyeTogger2_i').removeClass('icon-eye-off');
-            $('#eyeTogger2_i').addClass('icon-eye');
-            $('#createAccount_Password').attr('type', 'text');
-        } else {
-            $('#eyeTogger2_i').addClass('icon-eye-off');
-            $('#eyeTogger2_i').removeClass('icon-eye');
-            $('#createAccount_Password').attr('type', 'password');
-        }
-    }
+    //function eyeTogger2() {
+    //    if ($('#createAccount_Password').attr('type') == 'password') {
+    //        //  <!-- class切換=>icon-eye-off/icon-eye -->
+    //        $('#eyeTogger2_i').removeClass('icon-eye-off');
+    //        $('#eyeTogger2_i').addClass('icon-eye');
+    //        $('#createAccount_Password').attr('type', 'text');
+    //    } else {
+    //        $('#eyeTogger2_i').addClass('icon-eye-off');
+    //        $('#eyeTogger2_i').removeClass('icon-eye');
+    //        $('#createAccount_Password').attr('type', 'password');
+    //    }
+    //}
 
-    function switchLang(Lang, isReload) {
-        showLoading();
+    //function switchLang(Lang, isReload) {
+    //    showLoading();
    
-        $("#btn_switchlang").children().remove();
+    //    $("#btn_switchlang").children().remove();
 
-        if ($('#footerLangIcon').hasClass('icon-flag-JP')) {
-            $('#footerLangIcon').removeClass('icon-flag-JP');
-        }
+    //    if ($('#footerLangIcon').hasClass('icon-flag-JP')) {
+    //        $('#footerLangIcon').removeClass('icon-flag-JP');
+    //    }
 
-        if ($('#footerLangIcon').hasClass('icon-flag-ZH')) {
-            $('#footerLangIcon').removeClass('icon-flag-ZH');
-        }
-        switch (Lang) {
-            case "JPN":
-                LangText = "日本語";
-                $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
-                $('#footerLangIcon').addClass('icon-flag-JP');
-                $('#footerLangText').text(LangText);
-                setCookie("Lang", "JPN", 365);
-                break;
-            case "CHT":
-                LangText = "繁體中文";
-                $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-ZH"></i>`);
-                $('#footerLangIcon').addClass('icon-flag-ZH');
-                $('#footerLangText').text(LangText);
-                setCookie("Lang", "CHT", 365);
-                break;
-            case "ENG":
-                LangText = "日本語";
-                $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
-                $('#langIcon').addClass('icon-flag-JP');
-                $('#footerLangText').text(LangText);
-                break;
-            case "CHS":
-                LangText = "簡體中文";
-                $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-ZH"></i>`);
-                $('#footerLangIcon').addClass('icon-flag-ZH');
-                $('#footerLangText').text(LangText);
-                break;
-            default:
-                LangText = "日本語";
-                $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
-                $('#footerLangIcon').addClass('icon-flag-JP');
-                $('#footerLangText').text(LangText);
-                break;
-        }
+    //    if ($('#footerLangIcon').hasClass('icon-flag-ZH')) {
+    //        $('#footerLangIcon').removeClass('icon-flag-ZH');
+    //    }
+    //    switch (Lang) {
+    //        case "JPN":
+    //            LangText = "日本語";
+    //            $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
+    //            $('#footerLangIcon').addClass('icon-flag-JP');
+    //            $('#footerLangText').text(LangText);
+    //            setCookie("Lang", "JPN", 365);
+    //            break;
+    //        case "CHT":
+    //            LangText = "繁體中文";
+    //            $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-ZH"></i>`);
+    //            $('#footerLangIcon').addClass('icon-flag-ZH');
+    //            $('#footerLangText').text(LangText);
+    //            setCookie("Lang", "CHT", 365);
+    //            break;
+    //        case "ENG":
+    //            LangText = "日本語";
+    //            $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
+    //            $('#langIcon').addClass('icon-flag-JP');
+    //            $('#footerLangText').text(LangText);
+    //            break;
+    //        case "CHS":
+    //            LangText = "簡體中文";
+    //            $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-ZH"></i>`);
+    //            $('#footerLangIcon').addClass('icon-flag-ZH');
+    //            $('#footerLangText').text(LangText);
+    //            break;
+    //        default:
+    //            LangText = "日本語";
+    //            $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
+    //            $('#footerLangIcon').addClass('icon-flag-JP');
+    //            $('#footerLangText').text(LangText);
+    //            break;
+    //    }
 
-        //document.getElementById("idLangText").innerText = LangText;
-        if (isReload) {
-            setLanguage(Lang, function () {
-                appendGameItem();
-                closeLoading();
-            });
-        }
-        $('#ModalLanguage').modal('hide');
-        $("#btn_PupLangClose").click();
-    }
+    //    //document.getElementById("idLangText").innerText = LangText;
+    //    if (isReload) {
+    //        setLanguage(Lang, function () {
+    //            appendGameItem();
+    //            closeLoading();
+    //        });
+    //    }
+    //    $('#ModalLanguage').modal('hide');
+    //    $("#btn_PupLangClose").click();
+    //}
 
-    function setLanguage(c, cb) {
-        EWinWebInfo.Lang = c;
-        window.localStorage.setItem("Lang", c);
+    //function setLanguage(c, cb) {
+    //    EWinWebInfo.Lang = c;
+    //    window.localStorage.setItem("Lang", c);
 
-        mlp.loadLanguage(c, function () {
-            if (cb)
-                cb();
-        });
+    //    mlp.loadLanguage(c, function () {
+    //        if (cb)
+    //            cb();
+    //    });
 
-    }
+    //}
 
-    function logout(isRefresh) {
-        EWinWebInfo.UserInfo = null;
-        EWinWebInfo.UserLogined = false;
+    //function logout(isRefresh) {
+    //    EWinWebInfo.UserInfo = null;
+    //    EWinWebInfo.UserLogined = false;
 
-        for (var i = 0; i < Object.keys(window.sessionStorage).length; i++) {
-            var sessionStorageKeys = Object.keys(window.sessionStorage)[i];
-            if (sessionStorageKeys != 'OpenGameBeforeLogin') {
-                window.sessionStorage.removeItem(sessionStorageKeys);
-            }
-        }
+    //    for (var i = 0; i < Object.keys(window.sessionStorage).length; i++) {
+    //        var sessionStorageKeys = Object.keys(window.sessionStorage)[i];
+    //        if (sessionStorageKeys != 'OpenGameBeforeLogin') {
+    //            window.sessionStorage.removeItem(sessionStorageKeys);
+    //        }
+    //    }
 
-        delCookie("RecoverToken");
-        delCookie("LoginAccount");
-        delCookie("CT");
-        delCookie("SID");
+    //    delCookie("RecoverToken");
+    //    delCookie("LoginAccount");
+    //    delCookie("CT");
+    //    delCookie("SID");
 
-        if (isRefresh) {
-            window.location.href = "Refresh.aspx?index.aspx";
-        }
-    }
+    //    if (isRefresh) {
+    //        window.location.href = "Refresh.aspx?index.aspx";
+    //    }
+    //}
 
     function getOS() {
         var os = function () {
@@ -865,18 +862,12 @@
     function init() {
         //showLoading();
         mlp = new multiLanguage();
-        var cookieLang = getCookie("Lang");
-        if (cookieLang != null && cookieLang!="") {
-            EWinWebInfo.Lang = cookieLang;
-        }
+        //var cookieLang = getCookie("Lang");
+        //if (cookieLang != null && cookieLang!="") {
+        //    EWinWebInfo.Lang = cookieLang;
+        //}
 
-        if (PCode) {
-            $('#createAccount_PCode').val(PCode);
-            $('#createAccount_PCode').attr('disabled', 'disabled');
-            //if (location.href.includes('?')) {
-            //    history.pushState({}, null, location.href.split('?')[0]);
-            //}
-        }
+      
       
         switch (EWinWebInfo.Lang) {
             case "JPN":
@@ -914,95 +905,95 @@
 
         mlp.loadLanguage(EWinWebInfo.Lang, function () {
 
-            var loginFailMessage="<%=LoginFailMessage%>"
-            if (loginFailMessage != "") {
+            //var loginFailMessage=""
+            //if (loginFailMessage != "") {
                 
-                showMessageOK(mlp.getLanguageKey("登入失敗"), mlp.getLanguageKey(loginFailMessage), function () {
-                    window.history.back();
-                });
-            }
+            //    showMessageOK(mlp.getLanguageKey("登入失敗"), mlp.getLanguageKey(loginFailMessage), function () {
+            //        window.history.back();
+            //    });
+            //}
 
-            lobbyClient = new LobbyAPI("/API/LobbyAPI.asmx");
+            //lobbyClient = new LobbyAPI("/API/LobbyAPI.asmx");
 
             appendGameFrame();
             appendGameItem();
             closeLoading();
-            window.setTimeout(function () {
-                lobbyClient.GetCompanySite(Math.uuid(), function (success, o) {
-                    if (success) {
-                        if (o.Result == 0) {
-                            SiteInfo = o;
-                            if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
-                                API_SetLogin(EWinWebInfo.SID, function (logined) {
+            //window.setTimeout(function () {
+            //    lobbyClient.GetCompanySite(Math.uuid(), function (success, o) {
+            //        if (success) {
+            //            if (o.Result == 0) {
+            //                SiteInfo = o;
+            //                if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
+            //                    API_SetLogin(EWinWebInfo.SID, function (logined) {
                                 
-                                    if (logined == false) {
-                                        userRecover();
-                                    }
+            //                        if (logined == false) {
+            //                            userRecover();
+            //                        }
             
-                                    EWinWebInfo.FirstLoaded = true;
-                                });
-                            } else {
-                                updateBaseInfo();
-                            }
+            //                        EWinWebInfo.FirstLoaded = true;
+            //                    });
+            //                } else {
+            //                    updateBaseInfo();
+            //                }
 
-                            //if (cb)
-                            //    cb(true);
-                        } else {
-                            if (o.Message == "InvalidSID") {
-                                // login fail
-                                EWinWebInfo.UserLogined = false;
-                            } else {
-                                EWinWebInfo.UserLogined = false;
+            //                //if (cb)
+            //                //    cb(true);
+            //            } else {
+            //                if (o.Message == "InvalidSID") {
+            //                    // login fail
+            //                    EWinWebInfo.UserLogined = false;
+            //                } else {
+            //                    EWinWebInfo.UserLogined = false;
 
-                                showMessageOK(mlp.getLanguageKey("錯誤"), mlp.getLanguageKey(o.Message));
-                            }
+            //                    showMessageOK(mlp.getLanguageKey("錯誤"), mlp.getLanguageKey(o.Message));
+            //                }
 
-                        }
-                    }
-                    else {
-                        showMessageOK(mlp.getLanguageKey("錯誤"), mlp.getLanguageKey("服務器異常, 請稍後再嘗試一次"), function () {
-                            window.location.href = "index.aspx"
-                        });
-                    }
+            //            }
+            //        }
+            //        else {
+            //            showMessageOK(mlp.getLanguageKey("錯誤"), mlp.getLanguageKey("服務器異常, 請稍後再嘗試一次"), function () {
+            //                window.location.href = "index.aspx"
+            //            });
+            //        }
 
-                })
-            }, 500);
+            //    })
+            //}, 500);
 
-            window.setInterval(function () {
-                // refresh SID and Token;
-                var guid = Math.uuid();
+            //window.setInterval(function () {
+            //    // refresh SID and Token;
+            //    var guid = Math.uuid();
 
-                if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
-                    lobbyClient.KeepSID(EWinWebInfo.SID, guid, function (success, o) {
-                        if (success == true) {
-                            if (o.Result == 0) {
-                                needCheckLogin = true;
-                            } else {
-                                if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
-                                    needCheckLogin = true;
-                                }
-                            }
-                        }
-                    });
+            //    if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
+            //        lobbyClient.KeepSID(EWinWebInfo.SID, guid, function (success, o) {
+            //            if (success == true) {
+            //                if (o.Result == 0) {
+            //                    needCheckLogin = true;
+            //                } else {
+            //                    if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
+            //                        needCheckLogin = true;
+            //                    }
+            //                }
+            //            }
+            //        });
 
-                }
-            }, 10000);
+            //    }
+            //}, 10000);
 
-            window.setInterval(function () {
-                if (needCheckLogin == true) {
-                    needCheckLogin = false;
+            //window.setInterval(function () {
+            //    if (needCheckLogin == true) {
+            //        needCheckLogin = false;
 
-                    if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
-                        API_SetLogin(EWinWebInfo.SID, function (logined) {
-                            if (logined == false) {
-                                userRecover();
-                            }
-                        });
-                    } else {
-                        updateBaseInfo();
-                    }
-                }
-            }, 1000);
+            //        if ((EWinWebInfo.SID != null) && (EWinWebInfo.SID != "")) {
+            //            API_SetLogin(EWinWebInfo.SID, function (logined) {
+            //                if (logined == false) {
+            //                    userRecover();
+            //                }
+            //            });
+            //        } else {
+            //            updateBaseInfo();
+            //        }
+            //    }
+            //}, 1000);
 
         });
 
@@ -2345,7 +2336,7 @@
                                 <ul class="nav header_setting_content">
                                     
                                     <!-- ==== 登入前 ====-->
-                                    <li class="nav-item unLogIn_wrapper " id="idLoginBtn">
+                                   <%-- <li class="nav-item unLogIn_wrapper " id="idLoginBtn">
                                         <ul class="horiz-list">
                                             <li class="login">
                                                 <button class="btn-login btn" type="button" onclick="showUserLogInModal()" data-toggle="modal">
@@ -2357,9 +2348,9 @@
                                                 <button class="btn-register btn " type="button" onclick="showCreateAccountModal()" data-toggle="modal"><span class="language_replace">註冊</span></button>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li>--%>
                                     <!--  ==== 登入後 ====-->
-                                    <li class="nav-item logIned_wrapper is-hide" id="idMenuLogin">
+                                  <%--  <li class="nav-item logIned_wrapper is-hide" id="idMenuLogin">
                                         <ul class="horiz-list">
                                             <li class="nav-item login">
                                                 <button class="btn-logout btn" type="button" onclick="logout(true)">
@@ -2379,7 +2370,7 @@
                                                 </a>
                                             </li> -->
                                         </ul>
-                                    </li>
+                                    </li>--%>
 
                                     <!-- 語系 -->
                                     <li class="nav-item lang_wrapper submenu dropdown is-hide" style="display:none">
