@@ -864,3 +864,20 @@ animation:name duration | timing-function | delay | iteration-count | direction 
     padding-right: 10px;
   }
 }
+.modal .modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-primary {
+  color: white;
+  background: #079eb2;
+  border-color: #079eb2;
+}
+
+.btn-primary:not(:disabled):hover {
+  color: white;
+  background: #057b8b;
+  border-color: #057b8b;
+}

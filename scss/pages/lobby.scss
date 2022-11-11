@@ -1119,3 +1119,16 @@ $game-item-width-xml: $game-item-width-unit/7;
         padding-right: 10px;
     }
 }
+.modal .modal-footer {
+    justify-content: center;
+}
+.btn-primary {
+    color: white;
+    background: #079eb2;
+    border-color: #079eb2;
+}
+.btn-primary:not(:disabled):hover {
+    color: white;
+    background: #057b8b;
+    border-color: #057b8b;
+}
