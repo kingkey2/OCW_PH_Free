@@ -2140,6 +2140,7 @@ hr.line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 7%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

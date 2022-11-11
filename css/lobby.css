@@ -221,6 +221,10 @@ animation:name duration | timing-function | delay | iteration-count | direction 
       align-content: space-between;
 }
 
+.section-gamesArea {
+  padding-bottom: 5%;
+}
+
 .game-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,6 +678,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 
 .section-Wrapper {
   margin-bottom: 60px;
+  float: left;
 }
 
 .title-indent {
@@ -681,12 +686,15 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 }
 
 .section-webDesc {
+  width: 100%;
   background-color: rgb(246, 246, 246);
-  padding: 60px 0;
+  float: left;
+  padding: 60px 0 0;
 }
 .section-webDesc .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .sec-webDesc-title {
@@ -706,7 +714,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   display: -ms-flexbox;
   display: flex;
   max-width: 900px;
-  margin: 3.5rem auto;
+  margin: 3.5rem auto 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
