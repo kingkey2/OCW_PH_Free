@@ -2514,18 +2514,24 @@ string Version = EWinWeb.Version;
                            <a id="Footer_About" onclick="window.parent.API_LoadPage('About','About.html')"><span class="language_replace">關於我們</span></a>
                         </li>--%>
 
-                        <li class="info-item col">
+                        <%--<li class="info-item col">
                             <a id="Footer_ResponsibleGaming" onclick="window.parent.API_ShowPartialHtml('', 'ResponsibleGambling_ENG', false, null)">
+                                <span class="language_replace">負責任的賭博</span>
+                            </a>
+                        </li>--%>
+
+                        <li class="info-item col">
+                            <a id="Footer_ResponsibleGaming" onclick="showPartialHtml('', 'ResponsibleGambling_ENG', true, null)">
                                 <span class="language_replace">負責任的賭博</span>
                             </a>
                         </li>
                         <li class="info-item col">
-                            <a id="Footer_Rules" onclick="window.parent.API_ShowPartialHtml('', 'Rules_ENG', false, null)">
+                            <a id="Footer_Rules" onclick="window.parent.showPartialHtml('', 'Rules_ENG', true, null)">
                                 <span class="language_replace">利用規約</span>
                             </a>
                         </li>
                         <li class="info-item col">
-                            <a id="Footer_PrivacyPolicy" onclick="window.parent.API_ShowPartialHtml('', 'PrivacyPolicy_ENG', false, null)">
+                            <a id="Footer_PrivacyPolicy" onclick="window.parent.showPartialHtml('', 'PrivacyPolicy_ENG', true, null)">
                                 <span class="language_replace">隱私權政策</span>
                             </a>
 
