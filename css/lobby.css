@@ -674,6 +674,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 
 .section-Wrapper {
   margin-bottom: 60px;
+  float: left;
 }
 
 .title-indent {
@@ -681,12 +682,15 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 }
 
 .section-webDesc {
+  width: 100vw;
   background-color: rgb(246, 246, 246);
-  padding: 60px 0;
+  float: left;
+  padding: 60px 0 0;
 }
 .section-webDesc .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .sec-webDesc-title {
@@ -706,7 +710,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   display: -ms-flexbox;
   display: flex;
   max-width: 900px;
-  margin: 3.5rem auto;
+  margin: 3.5rem auto 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
