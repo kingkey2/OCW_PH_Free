@@ -2,37 +2,13 @@
 
 <%
 
-    RedisCache.SessionContext.SIDInfo SI;
-    string SID = Request["SID"];
     string Lang = Request["Lang"];
     string CurrencyType = Request["CurrencyType"];
     string GameCode = Request["GameCode"];
     string HomeUrl = Request["HomeUrl"];
-    string DemoPlay = "1"; //���䴩DEMO�����̥~�h�P�_
+    string DemoPlay = "1";
 
-    SI = RedisCache.SessionContext.GetSIDInfo(SID);
-
-    if (SI != null && !string.IsNullOrEmpty(SI.EWinSID)) {
-        if (GameCode == "EWin.EWinGaming") {
-            if (DemoPlay == "0") {
-                Response.Redirect(EWinWeb.EWinUrl + "/Game/Login.aspx?CT=" + HttpUtility.UrlEncode(SI.EWinCT) + "&Lang=" + Lang);
-            } else {
-                Response.Write("NotSupportDemo");
-                Response.Flush();
-                Response.End();
-            }
-        } else {
-            Response.Redirect(EWinWeb.EWinGameUrl + "/API/GamePlatformAPI2/UserLogin.aspx?SID=" + SI.EWinSID + "&Language=" + Lang + "&CurrencyType=" + CurrencyType + "&GameCode=" + GameCode + "&HomeUrl=" + HomeUrl + "&DemoPlay=" + DemoPlay);
-        }
-    } else {
-        if (DemoPlay == "1") {
-            Response.Redirect(EWinWeb.EWinGameUrl + "/API/GamePlatformAPI2/UserLogin.aspx?Language=" + Lang + "&CurrencyType=" + CurrencyType + "&GameCode=" + GameCode + "&HomeUrl=" + HomeUrl + "&DemoPlay=" + DemoPlay);
-        } else {
-            Response.Write("LoginStateExpire");
-            Response.Flush();
-            Response.End();
-        }
-    }
+   Response.Redirect(EWinWeb.EWinGameUrl + "/API/GamePlatformAPI2/UserLogin.aspx?Language=" + Lang + "&CurrencyType=" + CurrencyType + "&GameCode=" + GameCode + "&HomeUrl=" + HomeUrl + "&DemoPlay=" + DemoPlay);
 %>
 <!doctype html>
 <html>
