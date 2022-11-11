@@ -221,6 +221,10 @@ animation:name duration | timing-function | delay | iteration-count | direction 
       align-content: space-between;
 }
 
+.section-gamesArea {
+  padding-bottom: 5%;
+}
+
 .game-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,7 +686,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 }
 
 .section-webDesc {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(246, 246, 246);
   float: left;
   padding: 60px 0 0;

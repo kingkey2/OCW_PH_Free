@@ -296,6 +296,7 @@
 // 遊戲推薦區
 .section-gamesArea{
     // margin-top: 30px;
+    padding-bottom: 5%;
 }
 
 .game-list{
@@ -830,7 +831,7 @@ $game-item-width-xml: $game-item-width-unit/7;
 // 介紹說明
 
 .section-webDesc{
-    width:100vw;
+    width:100%;
     background-color: rgb(246, 246, 246);
     // text-align: center;
     float:left;
