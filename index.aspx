@@ -259,460 +259,167 @@ string Version = EWinWeb.Version;
     };
  
     var jsonGames = [
-        {
-            GameName: '92',
-            GameBrand: 'JL',
-            GameLangNameCHT: '夜店大亨',
-            GameLangNameJPN: 'パブタイクーン',
-            NeedLogin: false
+       {
+            GameName: '21003',
+            GameBrand: 'FC',
+            GameLangNameCHT: '大圣捕鱼',
+            GameLangNameENG: 'MONKEY KING FISHING',
+            NeedLogin: true
         }, {
-            GameName: '91',
-            GameBrand: 'JL',
-            GameLangNameCHT: '岡佐的尋寶之旅',
-            GameLangNameJPN: 'ゴンゾウ トレイジャー ハント',
-            NeedLogin: false
+            GameName: '21004',
+            GameBrand: 'FC',
+            GameLangNameCHT: '宝船捕鱼',
+            GameLangNameENG: 'BAO CHUAN FISHING',
+            NeedLogin: true
+        }, {
+            GameName: '21006',
+            GameBrand: 'FC',
+            GameLangNameCHT: '激斗捕鱼',
+            GameLangNameENG: 'FIERCE FISHING',
+            NeedLogin: true
+        },
+        {
+            GameName: '21007',
+            GameBrand: 'FC',
+            GameLangNameCHT: '星际捕鱼',
+            GameLangNameENG: 'STAR HUNTER',
+            NeedLogin: true
+        },
+        {
+            GameName: '242',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '丛林之王- 集鸿运',
+            GameLangNameENG: 'Tiger Jungle',
+            NeedLogin: true
+        }, {
+            GameName: '228',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '淘⾦乐- 集鸿运',
+            GameLangNameENG: 'Hit The Gold!',
+            NeedLogin: true
         }, {
             GameName: '254',
             GameBrand: 'BNG',
-            GameLangNameCHT: '黑狼-集鴻運',
-            GameLangNameJPN: 'ブラックウルフ',
-            NeedLogin: false
-        }, {
-            GameName: 'thelastsundown',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '終極日落',
-            GameLangNameJPN: 'ザ ラースト サンダウン',
-            NeedLogin: false
-        },
-        {
-            GameName: '1',
-            GameBrand: 'BBIN',
-            GameLangNameCHT: '糖果派對3',
-            GameLangNameJPN: 'キャンディーパーティ3',
+            GameLangNameCHT: '黑狼- 集鸿运',
+            GameLangNameENG: 'Black Wolf',
             NeedLogin: true
         },
         {
-            GameName: '1187',
-            GameBrand: 'BBIN',
-            GameLangNameCHT: '魚蝦蟹開了',
-            GameLangNameJPN: 'フーヘイハウ',
-            NeedLogin: true
-        }, {
-            GameName: '1336',
-            GameBrand: 'BBIN',
-            GameLangNameCHT: '酷搜馬戲團',
-            GameLangNameJPN: 'クソサーカス',
-            NeedLogin: true
-        }, {
-            GameName: '76',
-            GameBrand: 'BBIN',
-            GameLangNameCHT: '開心消消樂',
-            GameLangNameJPN: 'アーニポップ',
-            NeedLogin: true
-        },
-        {
-            GameName: '202',
+            GameName: '250',
             GameBrand: 'BNG',
-            GameLangNameCHT: '太陽神殿2 - 集鴻運',
-            GameLangNameJPN: 'サン オブ エジプト2',
+            GameLangNameCHT: '轰炸糖果',
+            GameLangNameENG: 'Candy Boom',
             NeedLogin: true
         }, {
-            GameName: '219',
+            GameName: '274',
             GameBrand: 'BNG',
-            GameLangNameCHT: '致命毒蘋果-集鴻運',
-            GameLangNameJPN: 'マジックアップル',
-            NeedLogin: true
-        }, {
-            GameName: '242',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '叢林之王-集鴻運',
-            GameLangNameJPN: 'タイガージャングル',
-            NeedLogin: true
-        }, {
-            GameName: '256',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '烈日女神-集鴻運',
-            GameLangNameJPN: 'クイーン オブ ザ サン',
-            NeedLogin: true
-        }, {
-            GameName: '187',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '阿茲特克王朝 - 集鴻運',
-            GameLangNameJPN: 'アツテカの太陽',
-            NeedLogin: true
-        }, {
-            GameName: '275',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '閃耀紅寶石: 集鴻運',
-            GameLangNameJPN: 'ルビーヒット',
-            NeedLogin: true
-        }, {
-            GameName: '271',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '果汁夢工廠',
-            GameLangNameJPN: 'ジュースインク',
-            NeedLogin: true
-        }, {
-            GameName: 'DuoFuDuoCaiDiamondEternity',
-            GameBrand: 'CG',
-            GameLangNameCHT: '1c大福大財-鑽石永恆',
-            GameLangNameJPN: 'ダフーダチャイ-ダイアモンドエターニティ',
-            NeedLogin: true
-        }, {
-            GameName: 'GeishaEX',
-            GameBrand: 'CG',
-            GameLangNameCHT: '新 藝妓',
-            GameLangNameJPN: 'ゲイシャ',
-            NeedLogin: true
-        }, {
-            GameName: 'FiveFlowers',
-            GameBrand: 'CG',
-            GameLangNameCHT: '五花爭豔',
-            GameLangNameJPN: '5ディーラーズ',
-            NeedLogin: true
-        },{
-            GameName: 'Baccarat2',
-            GameBrand: 'CG',
-            GameLangNameCHT: '經典百家樂',
-            GameLangNameJPN: 'バカラ2',
-            NeedLogin: true
-        },
-        {
-            GameName: 'InternationalSicbo',
-            GameBrand: 'CG',
-            GameLangNameCHT: '國際骰寶',
-            GameLangNameJPN: 'インターナショナルシック・ボー',
-            NeedLogin: true
-        },
-        {
-            GameName: 'Wheel',
-            GameBrand: 'CG',
-            GameLangNameCHT: '經典輪盤',
-            GameLangNameJPN: 'ホーイル',
-            NeedLogin: true
-        },
-        {
-            GameName: '115',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '冰雪女王',
-            GameLangNameJPN: 'スノークイーン',
-            NeedLogin: true
-        },
-        {
-            GameName: '206',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '甜蜜暴擊',
-            GameLangNameJPN: 'スイートポップ',
-            NeedLogin: true
-        },
-        {
-            GameName: '3',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '血之吻',
-            GameLangNameJPN: 'ヴァンパイアキス',
-            NeedLogin: true
-        },
-        {
-            GameName: '54',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '火草泥馬',
-            GameLangNameJPN: 'ファニーアルパカ',
-            NeedLogin: true
-        },
-        //{
-        //    GameName: 'EWinGaming',
-        //    GameBrand: 'EWin',
-        //    GameLangNameCHT: '真人百家樂(eWIN)',
-        //    GameLangNameJPN: 'EWinゲーミング',
-        //    NeedLogin: true
-        //},
-        {
-            GameName: '889',
-            GameBrand: 'GMW',
-            GameLangNameCHT: '小紅帽',
-            GameLangNameJPN: 'レッド',
-            NeedLogin: true
-        },
-        {
-            GameName: '917',
-            GameBrand: 'GMW',
-            GameLangNameCHT: '聖花',
-            GameLangNameJPN: 'セイクリドフラワー',
-            NeedLogin: true
-        },
-        {
-            GameName: '925',
-            GameBrand: 'GMW',
-            GameLangNameCHT: '豪華鑽石升級版',
-            GameLangNameJPN: 'エクストラダイアモンドデュラクス',
-            NeedLogin: true
-        },
-        {
-            GameName: '755',
-            GameBrand: 'HB',
-            GameLangNameCHT: '海洋之音',
-            GameLangNameJPN: 'オーシャンズコール',
-            NeedLogin: true
-        },
-        {
-            GameName: '757',
-            GameBrand: 'HB',
-            GameLangNameCHT: '超級龍捲風',
-            GameLangNameJPN: 'スーパーツイスター',
-            NeedLogin: true
-        },
-
-        {
-            GameName: '112',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '盜法老墓',
-            GameLangNameJPN: 'ピラミッドレイダー',
-            NeedLogin: true
-        },
-        {
-            GameName: '140',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '火燒連環船2',
-            GameLangNameJPN: 'ファイアーレットクリフ2',
-            NeedLogin: true
-        },
-        {
-            GameName: '161',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '大力神',
-            GameLangNameJPN: 'ハーキュリーズ',
-            NeedLogin: true
-        },
-        {
-            GameName: '201',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '拳霸',
-            GameLangNameJPN: 'ムエタイ',
-            NeedLogin: true
-        },
-        {
-            GameName: '79',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '變色龍',
-            GameLangNameJPN: 'カメレオン',
-            NeedLogin: true
-        },
-        {
-            GameName: '348',
-            GameBrand: 'MG',
-            GameLangNameCHT: '神聖鑽石',
-            GameLangNameJPN: 'ディバインダイヤモンズ',
-            NeedLogin: true
-        },
-        {
-            GameName: '359',
-            GameBrand: 'MG',
-            GameLangNameCHT: '亞歷山大女王',
-            GameLangNameJPN: 'クイーン オブ アレキサンドリア™',
-            NeedLogin: true
-        },
-        {
-            GameName: '367',
-            GameBrand: 'MG',
-            GameLangNameCHT: '鬼狩',
-            GameLangNameJPN: 'オニハンター',
-            NeedLogin: true
-        },
-        {
-            GameName: '387',
-            GameBrand: 'MG',
-            GameLangNameCHT: '奇遇宮殿',
-            GameLangNameJPN: 'アドベンチャーパレス',
-            NeedLogin: true
-        },
-        {
-            GameName: '400',
-            GameBrand: 'MG',
-            GameLangNameCHT: '愛麗娜',
-            GameLangNameJPN: 'アリアナ',
-            NeedLogin: true
-        },
-        {
-            GameName: '426',
-            GameBrand: 'MG',
-            GameLangNameCHT: '好運經紀人',
-            GameLangNameJPN: 'ブッキーオブオッズ',
-            NeedLogin: true
-        },
-        {
-            GameName: '458',
-            GameBrand: 'MG',
-            GameLangNameCHT: '板球明星',
-            GameLangNameJPN: 'クリケットスター',
-            NeedLogin: true
-        },
-        {
-            GameName: '495',
-            GameBrand: 'MG',
-            GameLangNameCHT: '美女槍手叢林激戰',
-            GameLangNameJPN: 'ガールズ ウィズ ガンズ-ジャングル ヒート',
-            NeedLogin: true
-        },
-        //{
-        //    GameName: '935',
-        //    GameBrand: 'NE',
-        //    GameLangNameCHT: '元素：覺醒',
-        //    GameLangNameJPN: 'エレメンツ：ザ アウェイクニング',
-        //    NeedLogin: true
-        //},
-        //{
-        //    GameName: '965',
-        //    GameBrand: 'NE',
-        //    GameLangNameCHT: '尋蝶記 2',
-        //    GameLangNameJPN: 'バタフライスタックス2',
-        //    NeedLogin: true
-        //},
-        {
-            GameName: 'eastereggs',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '復活節彩蛋',
-            GameLangNameJPN: 'イースターエッグ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'cloudquest',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '天際戰神',
-            GameLangNameJPN: 'クラウドクエスト',
-            NeedLogin: true
-        },
-        {
-            GameName: '261',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '快樂魚',
-            GameLangNameJPN: 'ハッピーフィッシュ',
-            NeedLogin: true
-        },
-        {
-            GameName: '191',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '蠻牛向錢衝: 集鴻運',
-            GameLangNameJPN: 'バッファローパワー',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs20rockvegas',
-            GameBrand: 'PP',
-            GameLangNameCHT: '石頭族賭城',
-            GameLangNameJPN: 'ロックベガス',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs25aztecking',
-            GameBrand: 'PP',
-            GameLangNameCHT: '阿茲特克國王',
-            GameLangNameJPN: 'アステカキング',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vswayshive',
-            GameBrand: 'PP',
-            GameLangNameCHT: '星際賞金',
-            GameLangNameJPN: 'スターバウンティ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs25vegas',
-            GameBrand: 'PP',
-            GameLangNameCHT: '維加斯之夜',
-            GameLangNameJPN: 'ベガスナイト',
-            NeedLogin: true
-        },
-        {
-            GameName: '1116',
-            GameBrand: 'RT',
-            GameLangNameCHT: '波斯寶藏',
-            GameLangNameJPN: 'ペルシアンフォーチュン',
-            NeedLogin: true
-        },
-        {
-            GameName: '1096',
-            GameBrand: 'RT',
-            GameLangNameCHT: '幸運魔法師',
-            GameLangNameJPN: 'ラッキーウィザード',
-            NeedLogin: true
-        },
-        {
-            GameName: 'masquerade',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '皇室化妝舞會',
-            GameLangNameJPN: 'ロイヤルマスカレード',
-            NeedLogin: true
-        },
-        {
-            GameName: 'roccogallo',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '羅科加洛',
-            GameLangNameJPN: 'ロッコガロ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'thepayingpianoclub',
-            GameBrand: 'PNG',
-            GameLangNameCHT: '鋼琴俱樂部',
-            GameLangNameJPN: 'ザ ペーイング ピャーノー クラブ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs243fortseren',
-            GameBrand: 'PP',
-            GameLangNameCHT: '希臘眾神',
-            GameLangNameJPN: 'グリークゴッズ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs25goldpig',
-            GameBrand: 'PP',
-            GameLangNameCHT: '招財福豬',
-            GameLangNameJPN: 'ゴールデン ピッグ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs50northgard',
-            GameBrand: 'PP',
-            GameLangNameCHT: '北境守護者',
-            GameLangNameJPN: 'ノース ガーディアンズ',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs243discolady',
-            GameBrand: 'PP',
-            GameLangNameCHT: '迪斯科女士',
-            GameLangNameJPN: 'ディスコーレーディー',
-            NeedLogin: true
-        },
-        {
-            GameName: 'vs243ckemp',
-            GameBrand: 'PP',
-            GameLangNameCHT: '調皮的皇帝',
-            GameLangNameJPN: 'チーキーエンペラー',
+            GameLangNameCHT: '惊天大盗',
+            GameLangNameENG: 'Big Heist',
             NeedLogin: true
         }
-        ,
-        {
-            GameName: '1087',
-            GameBrand: 'RT',
-            GameLangNameCHT: '王者之劍',
-            GameLangNameJPN: 'レジェンダリーエクスカリバー',
+        //, {
+        //    GameName: '52',
+        //    GameBrand: 'CQ9',
+        //    GameLangNameCHT: '跳高高',
+        //    GameLangNameENG: 'JumpHigh',
+        //    NeedLogin: true
+        //}, {
+        //    GameName: '7',
+        //    GameBrand: 'CQ9',
+        //    GameLangNameCHT: '跳起来',
+        //    GameLangNameENG: 'Rave Jump',
+        //    NeedLogin: true
+        //}, {
+        //    GameName: 'AT01',
+        //    GameBrand: 'CQ9',
+        //    GameLangNameCHT: '一炮捕鱼',
+        //    GameLangNameENG: 'Oneshot Fishing',
+        //    NeedLogin: true
+        //}, {
+        //    GameName: '179',
+        //    GameBrand: 'CQ9',
+        //    GameLangNameCHT: '跳高高2',
+        //    GameLangNameENG: 'Jump High 2',
+        //    NeedLogin: true
+        //}, {
+        //    GameName: '31',
+        //    GameBrand: 'CQ9',
+        //    GameLangNameCHT: '武圣',
+        //    GameLangNameENG: 'God of War',
+        //    NeedLogin: true
+        //}
+        , {
+            GameName: 'SMG_bookOfOz',
+            GameBrand: 'MG2',
+            GameLangNameCHT: 'Book of Oz',
+            GameLangNameENG: 'Book of Oz',
+            NeedLogin: true
+        }, {
+            GameName: 'SMG_9masksOfFire',
+            GameBrand: 'MG2',
+            GameLangNameCHT: '9 Masks Of Fire',
+            GameLangNameENG: '9 Masks Of Fire',
+            NeedLogin: true
+        }, {
+            GameName: 'SMG_laraCroftTemplesAndTombs',
+            GameBrand: 'MG2',
+            GameLangNameCHT: 'Lara Croft Temples and Tombs',
+            GameLangNameENG: 'Lara Croft Temples and Tombs',
+            NeedLogin: true
+        },{
+            GameName: 'SMG_thunderstruck2',
+            GameBrand: 'MG2',
+            GameLangNameCHT: 'Thunderstruck II',
+            GameLangNameENG: 'Thunderstruck II',
             NeedLogin: true
         },
         {
-            GameName: '1146',
-            GameBrand: 'RT',
-            GameLangNameCHT: '相撲大賞',
-            GameLangNameJPN: 'スモウスピン',
+            GameName: '545',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Banana King',
+            GameLangNameENG: 'Banana King',
             NeedLogin: true
         },
         {
-            GameName: '1009',
-            GameBrand: 'RT',
-            GameLangNameCHT: '一萬零一夜',
-            GameLangNameJPN: '10001ナイツ',
+            GameName: '481',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Book Of Pharaon HD',
+            GameLangNameENG: 'Book Of Pharaon HD',
+            NeedLogin: true
+        },
+        {
+            GameName: '854',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Jinge Belf',
+            GameLangNameENG: 'Jinge Belf',
+            NeedLogin: true
+        },
+        {
+            GameName: '811',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Dragons’ Queen',
+            GameLangNameENG: 'Dragons’ Queen',
+            NeedLogin: true
+        },
+        {
+            GameName: '802',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Magic Frog',
+            GameLangNameENG: 'Magic Frog',
+            NeedLogin: true
+        },
+        {
+            GameName: '853',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Lotus Luck',
+            GameLangNameENG: 'Lotus Luck',
+            NeedLogin: true
+        },
+        {
+            GameName: '822',
+            GameBrand: 'WM',
+            GameLangNameCHT: 'Golden Tree',
+            GameLangNameENG: 'Golden Tree',
             NeedLogin: true
         }
     ];
@@ -763,7 +470,7 @@ string Version = EWinWeb.Version;
                 $('#footerLangText').text(LangText);
                 break;
             case "ENG":
-                LangText = "日本語";
+                LangText = "ENG";
                 $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
                 $('#langIcon').addClass('icon-flag-JP');
                 $('#footerLangText').text(LangText);
@@ -1018,16 +725,14 @@ string Version = EWinWeb.Version;
     function appendGameItem() {
         $('#gameList').empty();
 
-        for (var i = 0; i < 30; i++) {
+        for (var i = 0; i < jsonGames.length; i++) {
             var data = jsonGames[i];
             var gamefree = "";
             var gamelangName = "";
-            if (!data.NeedLogin) {
-                gamefree = 'game-free';
-            }
+         
 
-            if (EWinWebInfo.Lang == 'JPN') {
-                gamelangName = data.GameLangNameJPN;
+            if (EWinWebInfo.Lang == 'ENG') {
+                gamelangName = data.GameLangNameENG;
             } else {
                 gamelangName = data.GameLangNameCHT;
             }
@@ -1035,7 +740,7 @@ string Version = EWinWeb.Version;
             var imgsrc = `${EWinWebInfo.ImageUrl}/${data.GameBrand}/${EWinWebInfo.Lang}/${data.GameName}.png`;
             var gameItem = `<div class="game-item ${gamefree}">
                         <div class="game-item-inner">
-                            <div class="game-item-link" onclick="openGame('${data.GameBrand}','${data.GameName}','${gamelangName}',${data.NeedLogin})" onmouseover="">
+                            <div class="game-item-link" onclick="openGame('${data.GameBrand == "MG2" ? "MG" : data.GameBrand}','${data.GameName}','${gamelangName}',${data.NeedLogin})" onmouseover="">
                                 <div class="game-item-img">
                                     <div class="img-wrap">
                                         <img class="gameimg lozad"
@@ -1053,9 +758,9 @@ string Version = EWinWeb.Version;
             $('#gameList').append(gameItem);
   
         }
-        $('#gameList').append(`<div class="wrapper_center" id="wrapper_center">
-                        <div class="btn btn-more" onclick="appendGameItem2()">${mlp.getLanguageKey("查看更多")}</div>
-                    </div>`);
+        //$('#gameList').append(`<div class="wrapper_center" id="wrapper_center">
+        //                <div class="btn btn-more" onclick="appendGameItem2()">${mlp.getLanguageKey("查看更多")}</div>
+        //            </div>`);
 
     }
 
@@ -1082,8 +787,8 @@ string Version = EWinWeb.Version;
                 gamefree = 'game-free';
             }
 
-            if (EWinWebInfo.Lang == 'JPN') {
-                gamelangName = data.GameLangNameJPN;
+            if (EWinWebInfo.Lang == 'ENG') {
+                gamelangName = data.GameLangNameENG;
             } else {
                 gamelangName = data.GameLangNameCHT;
             }
@@ -1113,7 +818,7 @@ string Version = EWinWeb.Version;
 
     function showLangProp() {
 
-        if (EWinWebInfo.Lang=='JPN') {
+        if (EWinWebInfo.Lang=='ENG') {
         $('.lang-popup-list').eq(0).find('input').eq(0).prop("checked", true);
         } else {
         $('.lang-popup-list').eq(0).find('input').eq(1).prop("checked", true);
