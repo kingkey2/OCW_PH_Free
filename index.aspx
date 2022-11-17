@@ -1407,13 +1407,11 @@ string Version = EWinWeb.Version;
                     <div class="partner">
                         <div class="logo">
                             <div class="row">
-                                <%--   
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-eWIN.png" alt="">
                                     </div>
                                 </div>
-                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-microgaming.png" alt="">
@@ -1450,7 +1448,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-gmw.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-cq9.png" alt="">
@@ -1462,7 +1460,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-red-tiger.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-evo.png" alt="">
@@ -1473,7 +1471,6 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-bco.png" alt="">
                                     </div>
                                 </div>
-                                <%--  
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-cg.png" alt="">
@@ -1481,10 +1478,21 @@ string Version = EWinWeb.Version;
                                 </div>
                                 <div class="logo-item">
                                     <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-ds88.png" alt="">
+                                    </div>
+                                </div>
+                                <%--  
+                                <div class="logo-item">
+                                    <div class="img-crop">
                                         <img src="/images/logo/footer/logo-playngo.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-xg.png" alt="">
+                                    </div>
+                                </div>
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-pg.png" alt="">
@@ -1495,7 +1503,17 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-cmd.png" alt="">
                                     </div>
                                 </div>
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-wm.png" alt="">
+                                    </div>
+                                </div>
                                 <%-- 
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-bti.png" alt="">
+                                    </div>
+                                </div>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-netent.png" alt="">
@@ -1511,11 +1529,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-evops.png" alt="">
                                     </div>
                                 </div>
-                                <div class="logo-item">
-                                    <div class="img-crop">
-                                        <img src="/images/logo/footer/logo-bti.png" alt="">
-                                    </div>
-                                </div>
+                                
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-zeus.png" alt="">
@@ -1541,7 +1555,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-va.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                             </div>
                         </div>
                     </div>
