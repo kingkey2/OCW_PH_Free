@@ -1561,7 +1561,7 @@ string Version = EWinWeb.Version;
                     </div>
 
                     <div class="company-detail">
-                        <div class="company-license">
+                        <div class="company-license" style="display:none">
                             <iframe src="https://licensing.gaming-curacao.com/validator/?lh=73f82515ca83aaf2883e78a6c118bea3&template=tseal" width="150" height="50" style="border: none;"></iframe>
                         </div>
                         <div class="company-address">
