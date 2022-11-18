@@ -382,7 +382,7 @@ string Version = EWinWeb.Version;
             GameName: '138',
             GameBrand: 'CQ9',
             GameLangNameCHT: '跳過來',
-            GameLangNameENG: "Move n' Jump",
+            GameLangNameENG: "Move n Jump",
             NeedLogin: true
         }
         , {
