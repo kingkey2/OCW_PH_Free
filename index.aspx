@@ -292,6 +292,41 @@ string Version = EWinWeb.Version;
             GameLangNameENG: 'STAR HUNTER',
             NeedLogin: true
         },
+        {
+            GameName: '22024',
+            GameBrand: 'FC',
+            GameLangNameCHT: '龜兔賽車',
+            GameLangNameENG: 'ANIMAL RACING',
+            NeedLogin: true
+        },
+        {
+            GameName: '22027',
+            GameBrand: 'FC',
+            GameLangNameCHT: '開心奪寶',
+            GameLangNameENG: 'HAPPY DUO BAO',
+            NeedLogin: true
+        },
+        {
+            GameName: '22028',
+            GameBrand: 'FC',
+            GameLangNameCHT: '尋寶奇航',
+            GameLangNameENG: 'TREASURE CRUISE',
+            NeedLogin: true
+        },
+        {
+            GameName: '22034',
+            GameBrand: 'FC',
+            GameLangNameCHT: '淘金樂',
+            GameLangNameENG: 'GOLD RUSH',
+            NeedLogin: true
+        },
+        {
+            GameName: '22042',
+            GameBrand: 'FC',
+            GameLangNameCHT: '古墓秘寶',
+            GameLangNameENG: 'TREASURE RAIDERS',
+            NeedLogin: true
+        },
         //{
         //    GameName: '242',
         //    GameBrand: 'BNG',
@@ -323,6 +358,36 @@ string Version = EWinWeb.Version;
             GameBrand: 'BNG',
             GameLangNameCHT: '惊天大盗',
             GameLangNameENG: 'Big Heist',
+            NeedLogin: true
+        }, {
+            GameName: '14',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '快樂鳥',
+            GameLangNameENG: '15 Golden Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '168',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '錢滾滾聖甲蟲',
+            GameLangNameENG: 'Scarab Riches',
+            NeedLogin: true
+        }, {
+            GameName: '173',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '太陽神殿-集鴻運',
+            GameLangNameENG: 'Sun of Egypt',
+            NeedLogin: true
+        }, {
+            GameName: '240',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '招財金像神-集鴻運',
+            GameLangNameENG: 'Ganesha Boost',
+            NeedLogin: true
+        }, {
+            GameName: '241',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '皇家錢滾滾-集鴻運',
+            GameLangNameENG: 'Royal Coins: Hold and Win',
             NeedLogin: true
         }
         , {
