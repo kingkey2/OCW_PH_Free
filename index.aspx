@@ -982,7 +982,7 @@ string Version = EWinWeb.Version;
                 <!-- hot -->
                 <div class="category-dailypush-wrapper hot">
                     <div class="category-dailypush-inner">
-                        <div class="category-dailypush-img" style="background-color: #121a16;">
+                        <div class="category-dailypush-img" style="background-color: #111a17;">
                             <div class="img-box mobile">
                                 <div class="img-wrap">
                                     <img src="/images/lobby/dailypush-hot-M-001.jpg" alt="">
@@ -1003,10 +1003,10 @@ string Version = EWinWeb.Version;
                             <div class="category-dailypush-cotent">
                                 <h2 class="title language_replace">Today's Best</h2>
                                 <div class="info">
-                                    <h3 class="gamename language_replace">Mega Fishing</h3>
+                                    <h3 class="gamename language_replace">Tiger Jungle</h3>
                                     <div class="detail">
-                                        <span class="gamebrand language_replace">JL</span>
-                                        <span class="gamecategory language_replace">Fish</span>
+                                        <span class="gamebrand language_replace">BNG</span>
+                                        <span class="gamecategory language_replace">Slot</span>
                                     </div>
                                 </div>
                             

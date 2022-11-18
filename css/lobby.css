@@ -768,7 +768,6 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   }
   .section-main-banner .desktop {
     display: inherit;
-    background: #192033;
   }
 }
 @media (min-width: 768px) {
@@ -814,7 +813,6 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   }
   .category-dailypush-img .desktop {
     display: inherit;
-    background: #192033;
   }
 }
 @media (min-width: 1144px) {
