@@ -285,13 +285,14 @@ string Version = EWinWeb.Version;
             GameLangNameENG: 'STAR HUNTER',
             NeedLogin: true
         },
+        //{
+        //    GameName: '242',
+        //    GameBrand: 'BNG',
+        //    GameLangNameCHT: '丛林之王- 集鸿运',
+        //    GameLangNameENG: 'Tiger Jungle',
+        //    NeedLogin: true
+        //},
         {
-            GameName: '242',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '丛林之王- 集鸿运',
-            GameLangNameENG: 'Tiger Jungle',
-            NeedLogin: true
-        }, {
             GameName: '228',
             GameBrand: 'BNG',
             GameLangNameCHT: '淘⾦乐- 集鸿运',
@@ -317,37 +318,37 @@ string Version = EWinWeb.Version;
             GameLangNameENG: 'Big Heist',
             NeedLogin: true
         }
-        //, {
-        //    GameName: '52',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高',
-        //    GameLangNameENG: 'JumpHigh',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '7',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳起来',
-        //    GameLangNameENG: 'Rave Jump',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: 'AT01',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '一炮捕鱼',
-        //    GameLangNameENG: 'Oneshot Fishing',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '179',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高2',
-        //    GameLangNameENG: 'Jump High 2',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '31',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '武圣',
-        //    GameLangNameENG: 'God of War',
-        //    NeedLogin: true
-        //}
+        , {
+            GameName: '52',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高',
+            GameLangNameENG: 'JumpHigh',
+            NeedLogin: true
+        }, {
+            GameName: '7',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起来',
+            GameLangNameENG: 'Rave Jump',
+            NeedLogin: true
+        }, {
+            GameName: 'AT01',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '一炮捕鱼',
+            GameLangNameENG: 'Oneshot Fishing',
+            NeedLogin: true
+        }, {
+            GameName: '179',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高2',
+            GameLangNameENG: 'Jump High 2',
+            NeedLogin: true
+        }, {
+            GameName: '31',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '武圣',
+            GameLangNameENG: 'God of War',
+            NeedLogin: true
+        }
         , {
             GameName: 'SMG_bookOfOz',
             GameBrand: 'MG2',
