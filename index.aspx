@@ -348,6 +348,42 @@ string Version = EWinWeb.Version;
             GameLangNameCHT: '武圣',
             GameLangNameENG: 'God of War',
             NeedLogin: true
+        }, {
+            GameName: '200',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跑跑愛麗絲',
+            GameLangNameENG: 'Alice Run',
+            NeedLogin: true
+        }, {
+            GameName: '196',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '十倍金喜',
+            GameLangNameENG: 'Tenfold Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '180',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '金雞報喜3',
+            GameLangNameENG: 'Gu Gu Gu 3',
+            NeedLogin: true
+        }, {
+            GameName: '24',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起來2',
+            GameLangNameENG: 'Rave Jump 2',
+            NeedLogin: true
+        }, {
+            GameName: '111',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '飛起來',
+            GameLangNameENG: 'Fly Out',
+            NeedLogin: true
+        }, {
+            GameName: '138',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳過來',
+            GameLangNameENG: "Move n' Jump",
+            NeedLogin: true
         }
         , {
             GameName: 'SMG_bookOfOz',
