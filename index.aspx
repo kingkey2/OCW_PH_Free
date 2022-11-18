@@ -281,6 +281,13 @@ string Version = EWinWeb.Version;
         {
             GameName: '21007',
             GameBrand: 'FC',
+            GameLangNameCHT: '发财捕鱼',
+            GameLangNameENG: 'FA CHAI FISHING',
+            NeedLogin: true
+        },
+        {
+            GameName: '21008',
+            GameBrand: 'FC',
             GameLangNameCHT: '星际捕鱼',
             GameLangNameENG: 'STAR HUNTER',
             NeedLogin: true
@@ -329,12 +336,6 @@ string Version = EWinWeb.Version;
             GameBrand: 'CQ9',
             GameLangNameCHT: '跳起来',
             GameLangNameENG: 'Rave Jump',
-            NeedLogin: true
-        }, {
-            GameName: 'AT01',
-            GameBrand: 'CQ9',
-            GameLangNameCHT: '一炮捕鱼',
-            GameLangNameENG: 'Oneshot Fishing',
             NeedLogin: true
         }, {
             GameName: '179',
