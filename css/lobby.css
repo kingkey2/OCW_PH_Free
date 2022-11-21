@@ -135,11 +135,11 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 .category-dailypush-cotentBox .gamename {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   margin-bottom: 0.6rem;
   font-weight: 500;
 }
