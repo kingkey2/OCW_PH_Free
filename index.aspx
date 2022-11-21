@@ -281,17 +281,60 @@ string Version = EWinWeb.Version;
         {
             GameName: '21007',
             GameBrand: 'FC',
+            GameLangNameCHT: '发财捕鱼',
+            GameLangNameENG: 'FA CHAI FISHING',
+            NeedLogin: true
+        },
+        {
+            GameName: '21008',
+            GameBrand: 'FC',
             GameLangNameCHT: '星际捕鱼',
             GameLangNameENG: 'STAR HUNTER',
             NeedLogin: true
         },
         {
-            GameName: '242',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '丛林之王- 集鸿运',
-            GameLangNameENG: 'Tiger Jungle',
+            GameName: '22024',
+            GameBrand: 'FC',
+            GameLangNameCHT: '龜兔賽車',
+            GameLangNameENG: 'ANIMAL RACING',
             NeedLogin: true
-        }, {
+        },
+        {
+            GameName: '22027',
+            GameBrand: 'FC',
+            GameLangNameCHT: '開心奪寶',
+            GameLangNameENG: 'HAPPY DUO BAO',
+            NeedLogin: true
+        },
+        {
+            GameName: '22028',
+            GameBrand: 'FC',
+            GameLangNameCHT: '尋寶奇航',
+            GameLangNameENG: 'TREASURE CRUISE',
+            NeedLogin: true
+        },
+        {
+            GameName: '22034',
+            GameBrand: 'FC',
+            GameLangNameCHT: '淘金樂',
+            GameLangNameENG: 'GOLD RUSH',
+            NeedLogin: true
+        },
+        {
+            GameName: '22042',
+            GameBrand: 'FC',
+            GameLangNameCHT: '古墓秘寶',
+            GameLangNameENG: 'TREASURE RAIDERS',
+            NeedLogin: true
+        },
+        //{
+        //    GameName: '242',
+        //    GameBrand: 'BNG',
+        //    GameLangNameCHT: '丛林之王- 集鸿运',
+        //    GameLangNameENG: 'Tiger Jungle',
+        //    NeedLogin: true
+        //},
+        {
             GameName: '228',
             GameBrand: 'BNG',
             GameLangNameCHT: '淘⾦乐- 集鸿运',
@@ -316,38 +359,98 @@ string Version = EWinWeb.Version;
             GameLangNameCHT: '惊天大盗',
             GameLangNameENG: 'Big Heist',
             NeedLogin: true
+        }, {
+            GameName: '14',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '快樂鳥',
+            GameLangNameENG: '15 Golden Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '168',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '錢滾滾聖甲蟲',
+            GameLangNameENG: 'Scarab Riches',
+            NeedLogin: true
+        }, {
+            GameName: '173',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '太陽神殿-集鴻運',
+            GameLangNameENG: 'Sun of Egypt',
+            NeedLogin: true
+        }, {
+            GameName: '240',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '招財金像神-集鴻運',
+            GameLangNameENG: 'Ganesha Boost',
+            NeedLogin: true
+        }, {
+            GameName: '241',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '皇家錢滾滾-集鴻運',
+            GameLangNameENG: 'Royal Coins: Hold and Win',
+            NeedLogin: true
         }
-        //, {
-        //    GameName: '52',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高',
-        //    GameLangNameENG: 'JumpHigh',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '7',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳起来',
-        //    GameLangNameENG: 'Rave Jump',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: 'AT01',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '一炮捕鱼',
-        //    GameLangNameENG: 'Oneshot Fishing',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '179',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高2',
-        //    GameLangNameENG: 'Jump High 2',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '31',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '武圣',
-        //    GameLangNameENG: 'God of War',
-        //    NeedLogin: true
-        //}
+        , {
+            GameName: '52',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高',
+            GameLangNameENG: 'JumpHigh',
+            NeedLogin: true
+        }, {
+            GameName: '7',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起来',
+            GameLangNameENG: 'Rave Jump',
+            NeedLogin: true
+        }, {
+            GameName: '179',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高2',
+            GameLangNameENG: 'Jump High 2',
+            NeedLogin: true
+        }, {
+            GameName: '31',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '武圣',
+            GameLangNameENG: 'God of War',
+            NeedLogin: true
+        }, {
+            GameName: '200',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跑跑愛麗絲',
+            GameLangNameENG: 'Alice Run',
+            NeedLogin: true
+        }, {
+            GameName: '196',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '十倍金喜',
+            GameLangNameENG: 'Tenfold Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '180',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '金雞報喜3',
+            GameLangNameENG: 'Gu Gu Gu 3',
+            NeedLogin: true
+        }, {
+            GameName: '24',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起來2',
+            GameLangNameENG: 'Rave Jump 2',
+            NeedLogin: true
+        }, {
+            GameName: '111',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '飛起來',
+            GameLangNameENG: 'Fly Out',
+            NeedLogin: true
+        }, {
+            GameName: '138',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳過來',
+            GameLangNameENG: "Move n Jump",
+            NeedLogin: true
+        }
         , {
             GameName: 'SMG_bookOfOz',
             GameBrand: 'MG2',
