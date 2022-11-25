@@ -224,6 +224,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 
 .section-gamesArea {
   padding-bottom: 5%;
+  position: relative;
 }
 
 .game-list {
@@ -902,8 +903,8 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   }
 }
 .float_banner_wrap {
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 0;
   right: 5px;
   width: 180px;
   height: auto;
@@ -989,7 +990,6 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 }
 @media screen and (max-width: 639px) {
   .float_banner_wrap {
-    top: 15%;
     width: 120px;
   }
 }

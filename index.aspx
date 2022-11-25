@@ -1072,12 +1072,7 @@ string Version = EWinWeb.Version;
         <div id="mask_overlay" class="mask_overlay"></div>
     </header>
     <div class="main_area">
-        <section class="float_banner_wrap">
-            <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
-            <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
-            <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
-            <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
-        </section>
+        
         <section class="section-main-banner">
             <a href="#" class="hero-wrapper" target="_blank">
                 <div class="hero-item mobile">
@@ -1137,6 +1132,12 @@ string Version = EWinWeb.Version;
 
          <!-- 遊戲推薦區 -->
          <section class="section-gamesArea">
+            <section class="float_banner_wrap">
+                <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
+            </section>
             <div class="container">
                 <div class="game-list" id="gameList">
                     

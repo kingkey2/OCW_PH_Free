@@ -298,6 +298,7 @@
 .section-gamesArea{
     // margin-top: 30px;
     padding-bottom: 5%;
+    position: relative;
 }
 
 .game-list{
@@ -1153,8 +1154,8 @@ $game-item-width-xml: $game-item-width-unit/7;
     }
 }
 .float_banner_wrap{
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 0;
     right: 5px;
     width: 180px;
     height: auto;
@@ -1227,7 +1228,6 @@ $game-item-width-xml: $game-item-width-unit/7;
 }
 @media screen and (max-width:639px){
     .float_banner_wrap{
-        top: 15%;
         width: 120px;
     }
 }
