@@ -1012,7 +1012,10 @@ string Version = EWinWeb.Version;
 
                             <div class="header_setting">
                                 <ul class="nav header_setting_content">
-                                    
+                                    <!-- ==== 導入正式站 ====-->
+                                    <li class="register">
+                                        <button class="btn-register" type="button"><span class="language_replace" langkey="前往正式站">Official Site Go</span></button>
+                                    </li>
                                     <!-- ==== 登入前 ====-->
                                    <%-- <li class="nav-item unLogIn_wrapper " id="idLoginBtn">
                                         <ul class="horiz-list">
@@ -1069,18 +1072,25 @@ string Version = EWinWeb.Version;
         <div id="mask_overlay" class="mask_overlay"></div>
     </header>
     <div class="main_area">
+        <section class="float_banner_wrap">
+            <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
+            <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
+            <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
+            <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
+        </section>
         <section class="section-main-banner">
-            <div class="hero-wrapper">
+            <a href="#" class="hero-wrapper" target="_blank">
                 <div class="hero-item mobile">
                     <div class="img-wrap"><img src="images/main-banner-m.jpg" alt=""></div>
                 </div>
                 <div class="hero-item desktop">
                     <div class="img-wrap"><img src="images/main-banner.jpg" alt=""></div>
                 </div>
-            </div>
+            </a>
         </section>
         <!-- 各分類-單一遊戲推薦區 -->
         <section class="section-category-dailypush">
+            
             <div class="container">                
                 <!-- hot -->
                 <div class="category-dailypush-wrapper hot">
@@ -1134,6 +1144,15 @@ string Version = EWinWeb.Version;
                         <div class="btn btn-more" onclick="">查看更多</div>
                     </div>--%>
                 </div>
+                <a class="bottom_banner" href="#" target="_blank">
+                    <div class="category-dailypush-inner">
+                        <div class="category-dailypush-img">
+                            <div class="img-box mobile"><img src="images/bottom_banner_m.jpg" alt=""></div>
+                            <div class="img-box pad"><img src="images/bottom_banner_md.jpg" alt=""></div>
+                            <div class="img-box desktop"><img src="images/bottom_banner.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </a>
             </div>
          </section>
 
@@ -1636,6 +1655,30 @@ string Version = EWinWeb.Version;
             </div>
         </div>
     </div>
+    <div class="popgo">
+        <div class="popgo_wrap">
+            <div class="popgotitle">
+                <button type="button" class="btn-close">
+                    <span class="icon-cross"></span>
+                  </button>
+            </div>
+            <div class="popgobody"><p>More content and rewards are on the official website, go now?</p></div>
+            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="#">Go</a></div>
+        </div>
+    </div>
     <script type="text/javascript" src="https://rt.gsspat.jp/e/conversion/lp.js?ver=2"></script>
+    <script type="text/javascript">
+        $(".popgo").hide();
+        $(".float_close").click(function () {
+          $(".float_banner_wrap").toggleClass("FloatHide");
+          return false;
+        });
+        $(".float_Banner").click(function () {
+            $(".popgo").show();
+        });
+        $(".btn-close, .cancel, .OK").click(function () {
+            $(".popgo").hide();
+        });
+      </script> 
 </body>
 </html>

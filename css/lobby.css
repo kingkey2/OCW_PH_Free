@@ -11,6 +11,7 @@ animation:name duration | timing-function | delay | iteration-count | direction 
 .section-category-dailypush {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  position: relative;
 }
 .category-dailypush {
   cursor: pointer;
@@ -878,4 +879,248 @@ animation:name duration | timing-function | delay | iteration-count | direction 
   color: white;
   background: #057b8b;
   border-color: #057b8b;
+}
+
+.bottom_banner {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.bottom_banner .category-dailypush-inner {
+  min-height: 200px;
+}
+.bottom_banner .category-dailypush-inner .category-dailypush-img {
+  background-color: #79c2eb;
+}
+.bottom_banner .category-dailypush-inner .category-dailypush-img .img-box {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .bottom_banner .category-dailypush-inner .category-dailypush-img .img-box img {
+    height: 200px;
+    width: auto;
+  }
+}
+.float_banner_wrap {
+  position: fixed;
+  top: 10%;
+  right: 5px;
+  width: 180px;
+  height: auto;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.float_banner_wrap .float_close {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  float: left;
+  border-radius: 50%;
+  background: #122784;
+  color: #FFF !important;
+  text-align: center;
+  position: relative;
+  border: 2px solid #FFF;
+  top: -4px;
+}
+.float_banner_wrap .float_close:hover {
+  background: #1d37af;
+}
+.float_banner_wrap .float_close img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  -webkit-transition: -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+}
+.float_banner_wrap .float_Banner {
+  margin: 0 0 4% 0;
+  border-radius: 4px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.float_banner_wrap .float_Banner img {
+  width: 100%;
+  height: auto;
+}
+
+.FloatHide {
+  right: 4px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  width: 40px !important;
+}
+.FloatHide .float_close {
+  margin-left: 6px;
+}
+.FloatHide .float_close img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.FloatHide .float_Banner {
+  border-radius: 0;
+  margin: 0 0 4px 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .float_banner_wrap {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .float_banner_wrap {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 935px) {
+  .float_banner_wrap {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .float_banner_wrap {
+    top: 15%;
+    width: 120px;
+  }
+}
+.popgo {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popgo .popgo_wrap {
+  width: 50%;
+  height: auto;
+  min-height: 100px;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 5px;
+  background: #FFF;
+}
+.popgo .popgo_wrap .popgotitle, .popgo .popgo_wrap .popgobody, .popgo .popgo_wrap .popgofooter {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+}
+.popgo .popgo_wrap .btn-close {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  float: right;
+}
+.popgo .popgo_wrap .btn-close .icon-cross {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.popgo .popgo_wrap .btn-close .icon-cross:before, .popgo .popgo_wrap .btn-close .icon-cross:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+.popgo .popgo_wrap .btn-close .icon-cross:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.popgo .popgo_wrap .btn-close .icon-cross:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.popgo .popgo_wrap .btn-close .icon-cross span {
+  display: block;
+}
+.popgo .popgo_wrap .btn-close:hover, .popgo .popgo_wrap .btn-close:focus {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  background: rgba(0, 0, 0, 0.6);
+}
+.popgo .popgo_wrap .popgobody p {
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+.popgo .popgo_wrap .popgofooter a {
+  width: auto;
+  min-width: 100px;
+  height: auto;
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: #333;
+  color: #FFF;
+  border-radius: 20px;
+  font-size: 1rem;
+  display: inline-block;
+}
+.popgo .popgo_wrap .popgofooter a.cancel {
+  background-color: #e3e3e3;
+  color: #333;
+}
+.popgo .popgo_wrap .popgofooter a.cancel:hover {
+  background-color: #EEE;
+}
+.popgo .popgo_wrap .popgofooter a.OK {
+  background-color: #2c70bd;
+  color: #FFF;
+}
+.popgo .popgo_wrap .popgofooter a.OK:hover {
+  background-color: #357fd4;
 }

@@ -1954,6 +1954,19 @@ hr.line {
   background: linear-gradient(90deg, #ffb3a7, #ff9887);
 }
 
+.btn-register {
+  border-radius: 50px;
+  padding: 6px 25px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#ff745e), to(#ff836f));
+  background: linear-gradient(90deg, #ff745e, #ff836f);
+  color: #fff;
+}
+.btn-register:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ffa799), to(#ff9887));
+  background: linear-gradient(90deg, #ffa799, #ff9887);
+}
+
 .logIned_wrapper .btn {
   border: 0;
 }
