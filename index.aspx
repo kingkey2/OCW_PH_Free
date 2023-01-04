@@ -264,25 +264,26 @@ string Version = EWinWeb.Version;
             GameBrand: 'FC',
             GameLangNameCHT: '大圣捕鱼',
             GameLangNameENG: 'MONKEY KING FISHING',
-            NeedLogin: false
+            NeedLogin: true
         }, {
             GameName: '21004',
             GameBrand: 'FC',
             GameLangNameCHT: '宝船捕鱼',
             GameLangNameENG: 'BAO CHUAN FISHING',
-            NeedLogin: false
+            NeedLogin: true
         }, {
             GameName: '21006',
             GameBrand: 'FC',
             GameLangNameCHT: '激斗捕鱼',
             GameLangNameENG: 'FIERCE FISHING',
-            NeedLogin: false
-        }, {
+            NeedLogin: true
+        },
+        {
             GameName: '21007',
             GameBrand: 'FC',
             GameLangNameCHT: '发财捕鱼',
             GameLangNameENG: 'FA CHAI FISHING',
-            NeedLogin: false
+            NeedLogin: true
         },
         {
             GameName: '21008',
@@ -292,21 +293,57 @@ string Version = EWinWeb.Version;
             NeedLogin: true
         },
         {
-            GameName: '242',
-            GameBrand: 'BNG',
-            GameLangNameCHT: '丛林之王-集鸿运',
-            GameLangNameENG: 'Tiger Jungle',
+            GameName: '22024',
+            GameBrand: 'FC',
+            GameLangNameCHT: '龜兔賽車',
+            GameLangNameENG: 'ANIMAL RACING',
             NeedLogin: true
-        }, {
+        },
+        {
+            GameName: '22027',
+            GameBrand: 'FC',
+            GameLangNameCHT: '開心奪寶',
+            GameLangNameENG: 'HAPPY DUO BAO',
+            NeedLogin: true
+        },
+        {
+            GameName: '22028',
+            GameBrand: 'FC',
+            GameLangNameCHT: '尋寶奇航',
+            GameLangNameENG: 'TREASURE CRUISE',
+            NeedLogin: true
+        },
+        {
+            GameName: '22034',
+            GameBrand: 'FC',
+            GameLangNameCHT: '淘金樂',
+            GameLangNameENG: 'GOLD RUSH',
+            NeedLogin: true
+        },
+        {
+            GameName: '22042',
+            GameBrand: 'FC',
+            GameLangNameCHT: '古墓秘寶',
+            GameLangNameENG: 'TREASURE RAIDERS',
+            NeedLogin: true
+        },
+        //{
+        //    GameName: '242',
+        //    GameBrand: 'BNG',
+        //    GameLangNameCHT: '丛林之王- 集鸿运',
+        //    GameLangNameENG: 'Tiger Jungle',
+        //    NeedLogin: true
+        //},
+        {
             GameName: '228',
             GameBrand: 'BNG',
-            GameLangNameCHT: '淘⾦乐-集鸿运',
+            GameLangNameCHT: '淘⾦乐- 集鸿运',
             GameLangNameENG: 'Hit The Gold!',
             NeedLogin: true
         }, {
             GameName: '254',
             GameBrand: 'BNG',
-            GameLangNameCHT: '黑狼-集鸿运',
+            GameLangNameCHT: '黑狼- 集鸿运',
             GameLangNameENG: 'Black Wolf',
             NeedLogin: true
         },
@@ -322,40 +359,99 @@ string Version = EWinWeb.Version;
             GameLangNameCHT: '惊天大盗',
             GameLangNameENG: 'Big Heist',
             NeedLogin: true
+        }, {
+            GameName: '14',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '快樂鳥',
+            GameLangNameENG: '15 Golden Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '168',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '錢滾滾聖甲蟲',
+            GameLangNameENG: 'Scarab Riches',
+            NeedLogin: true
+        }, {
+            GameName: '173',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '太陽神殿-集鴻運',
+            GameLangNameENG: 'Sun of Egypt',
+            NeedLogin: true
+        }, {
+            GameName: '240',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '招財金像神-集鴻運',
+            GameLangNameENG: 'Ganesha Boost',
+            NeedLogin: true
+        }, {
+            GameName: '241',
+            GameBrand: 'BNG',
+            GameLangNameCHT: '皇家錢滾滾-集鴻運',
+            GameLangNameENG: 'Royal Coins: Hold and Win',
+            NeedLogin: true
         }
-        ,
-        //{
-        //    GameName: '52',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高',
-        //    GameLangNameENG: 'JumpHigh',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '7',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳起来',
-        //    GameLangNameENG: 'Rave Jump',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: 'AT01',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '一炮捕鱼',
-        //    GameLangNameENG: 'Oneshot Fishing',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '179',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '跳高高2',
-        //    GameLangNameENG: 'Jump High 2',
-        //    NeedLogin: true
-        //}, {
-        //    GameName: '31',
-        //    GameBrand: 'CQ9',
-        //    GameLangNameCHT: '武圣',
-        //    GameLangNameENG: 'God of War',
-        //    NeedLogin: true
-        //},
-        {
+        , {
+            GameName: '52',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高',
+            GameLangNameENG: 'JumpHigh',
+            NeedLogin: true
+        }, {
+            GameName: '7',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起来',
+            GameLangNameENG: 'Rave Jump',
+            NeedLogin: true
+        }, {
+            GameName: '179',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳高高2',
+            GameLangNameENG: 'Jump High 2',
+            NeedLogin: true
+        }, {
+            GameName: '31',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '武圣',
+            GameLangNameENG: 'God of War',
+            NeedLogin: true
+        }, {
+            GameName: '200',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跑跑愛麗絲',
+            GameLangNameENG: 'Alice Run',
+            NeedLogin: true
+        }, {
+            GameName: '196',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '十倍金喜',
+            GameLangNameENG: 'Tenfold Eggs',
+            NeedLogin: true
+        }, {
+            GameName: '180',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '金雞報喜3',
+            GameLangNameENG: 'Gu Gu Gu 3',
+            NeedLogin: true
+        }, {
+            GameName: '24',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳起來2',
+            GameLangNameENG: 'Rave Jump 2',
+            NeedLogin: true
+        }, {
+            GameName: '111',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '飛起來',
+            GameLangNameENG: 'Fly Out',
+            NeedLogin: true
+        }, {
+            GameName: '138',
+            GameBrand: 'CQ9',
+            GameLangNameCHT: '跳過來',
+            GameLangNameENG: "Move n Jump",
+            NeedLogin: true
+        }
+        , {
             GameName: 'SMG_bookOfOz',
             GameBrand: 'MG2',
             GameLangNameCHT: 'Book of Oz',
@@ -379,43 +475,50 @@ string Version = EWinWeb.Version;
             GameLangNameCHT: 'Thunderstruck II',
             GameLangNameENG: 'Thunderstruck II',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '545',
             GameBrand: 'WM',
             GameLangNameCHT: 'Banana King',
             GameLangNameENG: 'Banana King',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '481',
             GameBrand: 'WM',
             GameLangNameCHT: 'Book Of Pharaon HD',
             GameLangNameENG: 'Book Of Pharaon HD',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '854',
             GameBrand: 'WM',
             GameLangNameCHT: 'Jinge Belf',
             GameLangNameENG: 'Jinge Belf',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '811',
             GameBrand: 'WM',
-            GameLangNameCHT: 'Dragons’Queen',
-            GameLangNameENG: 'Dragons’Queen',
+            GameLangNameCHT: 'Dragons’ Queen',
+            GameLangNameENG: 'Dragons’ Queen',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '802',
             GameBrand: 'WM',
             GameLangNameCHT: 'Magic Frog',
             GameLangNameENG: 'Magic Frog',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '853',
             GameBrand: 'WM',
             GameLangNameCHT: 'Lotus Luck',
             GameLangNameENG: 'Lotus Luck',
             NeedLogin: true
-        }, {
+        },
+        {
             GameName: '822',
             GameBrand: 'WM',
             GameLangNameCHT: 'Golden Tree',
@@ -911,7 +1014,7 @@ string Version = EWinWeb.Version;
                                 <ul class="nav header_setting_content">
                                     <!-- ==== 導入正式站 ====-->
                                     <li class="register">
-                                        <button class="btn-register" type="button"><span class="language_replace" langkey="前往正式站">Official Site Go</span></button>
+                                        <button onclick="location.href='https://luckysprite.ph/index.aspx';" class="btn-register" type="button"><span class="language_replace" langkey="前往正式站">Official Site Go</span></button>
                                     </li>
                                     <!-- ==== 登入前 ====-->
                                    <%-- <li class="nav-item unLogIn_wrapper " id="idLoginBtn">
@@ -1031,9 +1134,9 @@ string Version = EWinWeb.Version;
          <section class="section-gamesArea">
             <section class="float_banner_wrap">
                 <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
-                <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
-                <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
-                <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
+                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner1.jpg" alt=""></a>
+                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner2.jpg" alt=""></a>
+                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner3.jpg" alt=""></a>
             </section>
             <div class="container">
                 <div class="game-list" id="gameList">
@@ -1559,7 +1662,7 @@ string Version = EWinWeb.Version;
                   </button>
             </div>
             <div class="popgobody"><p>More content and rewards are on the official website, go now?</p></div>
-            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="#">Go</a></div>
+            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="https://www.luckyfanta.com/index.aspx">Go</a></div>
         </div>
     </div>
     <script type="text/javascript" src="https://rt.gsspat.jp/e/conversion/lp.js?ver=2"></script>
