@@ -470,7 +470,7 @@ string Version = EWinWeb.Version;
                 $('#footerLangText').text(LangText);
                 break;
             case "ENG":
-                LangText = "日本語";
+                LangText = "ENG";
                 $("#btn_switchlang").append(`<i class="icon icon-mask icon-flag-JP"></i>`);
                 $('#langIcon').addClass('icon-flag-JP');
                 $('#footerLangText').text(LangText);
@@ -739,7 +739,7 @@ string Version = EWinWeb.Version;
             var imgsrc = `${EWinWebInfo.ImageUrl}/${data.GameBrand}/${EWinWebInfo.Lang}/${data.GameName}.png`;
             var gameItem = `<div class="game-item ${gamefree}">
                         <div class="game-item-inner">
-                            <div class="game-item-link" onclick="openGame('${data.GameBrand}','${data.GameName}','${gamelangName}',${data.NeedLogin})" onmouseover="">
+                            <div class="game-item-link" onclick="openGame('${data.GameBrand == "MG2" ? "MG" : data.GameBrand}','${data.GameName}','${gamelangName}',${data.NeedLogin})" onmouseover="">
                                 <div class="game-item-img">
                                     <div class="img-wrap">
                                         <img class="gameimg lozad"
@@ -818,7 +818,7 @@ string Version = EWinWeb.Version;
 
     function showLangProp() {
 
-        if (EWinWebInfo.Lang=='JPN') {
+        if (EWinWebInfo.Lang=='ENG') {
         $('.lang-popup-list').eq(0).find('input').eq(0).prop("checked", true);
         } else {
         $('.lang-popup-list').eq(0).find('input').eq(1).prop("checked", true);
@@ -909,7 +909,10 @@ string Version = EWinWeb.Version;
 
                             <div class="header_setting">
                                 <ul class="nav header_setting_content">
-                                    
+                                    <!-- ==== 導入正式站 ====-->
+                                    <li class="register">
+                                        <button class="btn-register" type="button"><span class="language_replace" langkey="前往正式站">Official Site Go</span></button>
+                                    </li>
                                     <!-- ==== 登入前 ====-->
                                    <%-- <li class="nav-item unLogIn_wrapper " id="idLoginBtn">
                                         <ul class="horiz-list">
@@ -966,23 +969,25 @@ string Version = EWinWeb.Version;
         <div id="mask_overlay" class="mask_overlay"></div>
     </header>
     <div class="main_area">
+        
         <section class="section-main-banner">
-            <div class="hero-wrapper">
+            <a href="#" class="hero-wrapper" target="_blank">
                 <div class="hero-item mobile">
                     <div class="img-wrap"><img src="images/main-banner-m.png" alt=""></div>
                 </div>
                 <div class="hero-item desktop">
                     <div class="img-wrap"><img src="images/main-banner.png" alt=""></div>
                 </div>
-            </div>
+            </a>
         </section>
         <!-- 各分類-單一遊戲推薦區 -->
         <section class="section-category-dailypush">
+            
             <div class="container">                
                 <!-- hot -->
                 <div class="category-dailypush-wrapper hot">
                     <div class="category-dailypush-inner">
-                        <div class="category-dailypush-img" style="background-color: #121a16;">
+                        <div class="category-dailypush-img" style="background-color: #111a17;">
                             <div class="img-box mobile">
                                 <div class="img-wrap">
                                     <img src="/images/lobby/dailypush-hot-M-001.jpg" alt="">
@@ -1003,10 +1008,10 @@ string Version = EWinWeb.Version;
                             <div class="category-dailypush-cotent">
                                 <h2 class="title language_replace">Today's Best</h2>
                                 <div class="info">
-                                    <h3 class="gamename language_replace">Mega Fishing</h3>
+                                    <h3 class="gamename language_replace">Tiger Jungle</h3>
                                     <div class="detail">
-                                        <span class="gamebrand language_replace">JL</span>
-                                        <span class="gamecategory language_replace">Fish</span>
+                                        <span class="gamebrand language_replace">BNG</span>
+                                        <span class="gamecategory language_replace">Slot</span>
                                     </div>
                                 </div>
                             
@@ -1024,6 +1029,12 @@ string Version = EWinWeb.Version;
 
          <!-- 遊戲推薦區 -->
          <section class="section-gamesArea">
+            <section class="float_banner_wrap">
+                <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
+            </section>
             <div class="container">
                 <div class="game-list" id="gameList">
                     
@@ -1031,6 +1042,15 @@ string Version = EWinWeb.Version;
                         <div class="btn btn-more" onclick="">查看更多</div>
                     </div>--%>
                 </div>
+                <a class="bottom_banner" href="#" target="_blank">
+                    <div class="category-dailypush-inner">
+                        <div class="category-dailypush-img">
+                            <div class="img-box mobile"><img src="images/bottom_banner_m.jpg" alt=""></div>
+                            <div class="img-box pad"><img src="images/bottom_banner_md.jpg" alt=""></div>
+                            <div class="img-box desktop"><img src="images/bottom_banner.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </a>
             </div>
          </section>
 
@@ -1112,13 +1132,11 @@ string Version = EWinWeb.Version;
                     <div class="partner">
                         <div class="logo">
                             <div class="row">
-                                <%--   
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-eWIN.png" alt="">
                                     </div>
                                 </div>
-                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-microgaming.png" alt="">
@@ -1155,7 +1173,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-gmw.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-cq9.png" alt="">
@@ -1167,7 +1185,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-red-tiger.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-evo.png" alt="">
@@ -1178,7 +1196,6 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-bco.png" alt="">
                                     </div>
                                 </div>
-                                <%--  
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-cg.png" alt="">
@@ -1186,10 +1203,21 @@ string Version = EWinWeb.Version;
                                 </div>
                                 <div class="logo-item">
                                     <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-ds88.png" alt="">
+                                    </div>
+                                </div>
+                                <%--  
+                                <div class="logo-item">
+                                    <div class="img-crop">
                                         <img src="/images/logo/footer/logo-playngo.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-xg.png" alt="">
+                                    </div>
+                                </div>
+                                --%>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-pg.png" alt="">
@@ -1200,7 +1228,17 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-cmd.png" alt="">
                                     </div>
                                 </div>
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-wm.png" alt="">
+                                    </div>
+                                </div>
                                 <%-- 
+                                <div class="logo-item">
+                                    <div class="img-crop">
+                                        <img src="/images/logo/footer/logo-bti.png" alt="">
+                                    </div>
+                                </div>
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-netent.png" alt="">
@@ -1216,11 +1254,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-evops.png" alt="">
                                     </div>
                                 </div>
-                                <div class="logo-item">
-                                    <div class="img-crop">
-                                        <img src="/images/logo/footer/logo-bti.png" alt="">
-                                    </div>
-                                </div>
+                                
                                 <div class="logo-item">
                                     <div class="img-crop">
                                         <img src="/images/logo/footer/logo-zeus.png" alt="">
@@ -1246,7 +1280,7 @@ string Version = EWinWeb.Version;
                                         <img src="/images/logo/footer/logo-va.png" alt="">
                                     </div>
                                 </div>
-                                --%> 
+                                --%>
                             </div>
                         </div>
                     </div>
@@ -1517,6 +1551,30 @@ string Version = EWinWeb.Version;
             </div>
         </div>
     </div>
+    <div class="popgo">
+        <div class="popgo_wrap">
+            <div class="popgotitle">
+                <button type="button" class="btn-close">
+                    <span class="icon-cross"></span>
+                  </button>
+            </div>
+            <div class="popgobody"><p>More content and rewards are on the official website, go now?</p></div>
+            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="#">Go</a></div>
+        </div>
+    </div>
     <script type="text/javascript" src="https://rt.gsspat.jp/e/conversion/lp.js?ver=2"></script>
+    <script type="text/javascript">
+        $(".popgo").hide();
+        $(".float_close").click(function () {
+          $(".float_banner_wrap").toggleClass("FloatHide");
+          return false;
+        });
+        $(".float_Banner").click(function () {
+            $(".popgo").show();
+        });
+        $(".btn-close, .cancel, .OK").click(function () {
+            $(".popgo").hide();
+        });
+      </script> 
 </body>
 </html>

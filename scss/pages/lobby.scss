@@ -14,6 +14,7 @@
 .section-category-dailypush{
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    position: relative;
     .container{
         // padding-left: 0;
         // padding-right: 0;
@@ -185,12 +186,12 @@
             display: flex;
             justify-content: space-between;
             // align-items: center;    
-            font-size: font-resize(12px);
+            font-size: font-resize(16px);
             font-weight: 300;
         }
 
         .gamename{
-            font-size: font-resize(18px);
+            font-size: font-resize(20px);
             margin-bottom: 0.6rem;
             font-weight: 500;
             
@@ -297,6 +298,7 @@
 .section-gamesArea{
     // margin-top: 30px;
     padding-bottom: 5%;
+    position: relative;
 }
 
 .game-list{
@@ -930,7 +932,6 @@ $game-item-width-xml: $game-item-width-unit/7;
 
         .desktop{
             display: inherit;
-            background: #192033;
         }
     }
 }
@@ -1008,8 +1009,7 @@ $game-item-width-xml: $game-item-width-unit/7;
                 display: none;
             }
             .desktop{              
-                display: inherit;
-                background: #192033;                
+                display: inherit;             
             }
         }
     }
@@ -1131,4 +1131,216 @@ $game-item-width-xml: $game-item-width-unit/7;
     color: white;
     background: #057b8b;
     border-color: #057b8b;
+}
+
+
+.bottom_banner{
+    overflow: hidden;
+    border-radius: 15px;
+    .category-dailypush-inner{
+        min-height: 200px;
+        .category-dailypush-img {
+            background-color: #79c2eb;
+            .img-box{
+                text-align: right;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .bottom_banner .category-dailypush-inner .category-dailypush-img .img-box img{
+        height:200px;
+        width:auto;
+    }
+}
+.float_banner_wrap{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 180px;
+    height: auto;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+    .float_close{
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+        float: left;
+        border-radius: 50%;
+        background: #122784;
+        color: #FFF !important;
+        text-align: center;
+        position: relative;
+        border: 2px solid #FFF;
+        top: -4px;
+        &:hover{
+            background: #1d37af;
+        }
+        img{
+            width:100%;
+            height:100%;
+            float: left;
+            transition: transform 0.35s ease-in-out;
+        }
+    }
+    .float_Banner{
+        margin:0 0 4% 0;
+        border-radius: 4px;
+        display: block;
+        overflow: hidden;
+        float:left;
+        box-shadow: 2px 2px 10px rgb(0 0 0 / .2);
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+}
+.FloatHide{
+    right: 4px;
+    transition: transform 0.5s ease-in-out;
+    width: 40px !important;
+    .float_close{
+        margin-left: 6px;
+        img{
+            transform: rotate(180deg);
+        }
+    }
+    .float_Banner{
+        border-radius: 0;
+        margin:0 0 4px 0;
+    }
+}
+@media screen and (max-width:1366px){
+    .float_banner_wrap{
+        width: 150px;
+    }
+}
+@media screen and (max-width:1280px){
+    .float_banner_wrap{
+        width: 130px;
+    }
+}
+@media screen and (max-width:935px){
+    .float_banner_wrap{
+        width: 120px;
+    }
+}
+@media screen and (max-width:639px){
+    .float_banner_wrap{
+        width: 120px;
+    }
+}
+.popgo{
+    width: 100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.3);
+    position:fixed;
+    display:flex;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:10;
+    align-items: center;
+    justify-content: center;
+    .popgo_wrap{
+        width: 50%;
+        height:auto;
+        min-height: 100px;
+        max-width:600px;
+        min-width: 300px;
+        border-radius: 5px;
+        background:#FFF;
+        .popgotitle,.popgobody,.popgofooter{
+            width: 100%;
+            height: auto;
+            float: left;
+            padding: 4px;
+            position: relative;
+            text-align: center;
+        }
+        .btn-close {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            margin:2px;
+            display: flex;
+            border:none;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 150ms;
+            float: right;
+        }
+        .btn-close .icon-cross {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: none;
+            position: relative;
+            width: 18px;
+            height: 18px;
+        }
+        .btn-close .icon-cross:before, .btn-close .icon-cross:after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+        }
+        .btn-close .icon-cross:before {
+            transform: rotate(45deg);
+        }
+        .btn-close .icon-cross:after {
+            transform: rotate(-45deg);
+        }
+        .btn-close .icon-cross span {
+            display: block;
+        }
+        .btn-close:hover, .btn-close:focus {
+            transform: rotateZ(90deg);
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .popgobody p{
+            padding:10px;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin: 0;
+            color:#333;
+            text-align: center;
+        }
+        .popgofooter a{
+            width:auto;
+            min-width: 100px;
+            height:auto;
+            padding:5px 20px;
+            margin:5px;
+            background-color:#333;
+            color:#FFF;
+            border-radius: 20px;
+            font-size: 1rem;
+            display: inline-block;
+        }
+        .popgofooter a.cancel{
+            background-color:#e3e3e3;
+            color:#333;
+            &:hover{
+                background-color:#EEE;
+            }
+        }
+        .popgofooter a.OK{
+            background-color:#2c70bd;
+            color:#FFF;
+            &:hover{
+                background-color:#357fd4;
+            }
+        }
+    }
+
 }
