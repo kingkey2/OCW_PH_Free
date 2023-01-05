@@ -181,16 +181,14 @@ string Version = EWinWeb.Version;
     <meta property="og:Keyword" content="Auto Fast Deposits and Withdrawals" />
     <meta property="og:description" content="Partners with a wide variety of well-known game brands, we provide fast deposit and withdrawal options, so you can play and have fun whenever you want!" />
 
-    <%--<meta property="og:url" content="https://www.free-maharaja.com/" />--%>
-    <!--日文圖片-->
-    <%--<meta property="og:image" content="https://www.free-maharaja.com/images/share_pic.png" />--%>
+
     <meta property="og:type" content="website" />
     <!-- Share image -->
-    <link rel="shortcut icon" href="images/favicon.ico"/>
-    <link rel="bookmark" href="images/favicon.ico"/>
-    <link rel="apple-touch-icon" href="images/share_pic.png"/>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="bookmark" href="images/favicon.png"/>
+    <link rel="apple-touch-icon" href="images/share_pic.png?a=1"/>
     <!--日文圖片-->
-    <link rel="image_src" href="https://www.free-maharaja.com/images/share_pic.png">
+    <link rel="image_src" href="images/share_pic.png?a=1">
     <link rel="stylesheet" href="css/basic.min.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
@@ -1074,7 +1072,7 @@ string Version = EWinWeb.Version;
     <div class="main_area">
         
         <section class="section-main-banner">
-            <a href="#" class="hero-wrapper" target="_blank">
+            <a href="https://luckysprite.ph/index.aspx?DstPage=Reg" class="hero-wrapper" target="_blank">
                 <div class="hero-item mobile">
                     <div class="img-wrap"><img src="images/main-banner-m.png" alt=""></div>
                 </div>
@@ -1134,9 +1132,9 @@ string Version = EWinWeb.Version;
          <section class="section-gamesArea">
             <section class="float_banner_wrap">
                 <a class="float_close" href="#"><img src="images/arrow-right2.svg" alt=""></a>
-                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner1.jpg" alt=""></a>
-                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner2.jpg" alt=""></a>
-                <a class="float_Banner" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter"><img src="images/float_banner3.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner1.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner2.jpg" alt=""></a>
+                <a class="float_Banner" href="#"><img src="images/float_banner3.jpg" alt=""></a>
             </section>
             <div class="container">
                 <div class="game-list" id="gameList">
@@ -1145,7 +1143,7 @@ string Version = EWinWeb.Version;
                         <div class="btn btn-more" onclick="">查看更多</div>
                     </div>--%>
                 </div>
-                <a class="bottom_banner" href="#" target="_blank">
+                <a class="bottom_banner" onclick="#" target="_blank">
                     <div class="category-dailypush-inner">
                         <div class="category-dailypush-img">
                             <div class="img-box mobile"><img src="images/bottom_banner_m.jpg" alt=""></div>
@@ -1662,7 +1660,7 @@ string Version = EWinWeb.Version;
                   </button>
             </div>
             <div class="popgobody"><p>More content and rewards are on the official website, go now?</p></div>
-            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="https://www.luckyfanta.com/index.aspx">Go</a></div>
+            <div class="popgofooter"><a class="cancel" href="#">cancel</a><a class="OK" href="https://luckysprite.ph/index.aspx?DstPage=ActivityCenter">Go</a></div>
         </div>
     </div>
     <script type="text/javascript" src="https://rt.gsspat.jp/e/conversion/lp.js?ver=2"></script>
@@ -1675,9 +1673,14 @@ string Version = EWinWeb.Version;
         $(".float_Banner").click(function () {
             $(".popgo").show();
         });
+        $(".bottom_banner").click(function () {
+            $(".popgo").show();
+        });
+
+        
         $(".btn-close, .cancel, .OK").click(function () {
             $(".popgo").hide();
         });
-      </script> 
+    </script> 
 </body>
 </html>
