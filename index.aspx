@@ -1,169 +1,169 @@
 <%@ Page Language="C#"%>
 <%
 
-//string Token;
-//int RValue;
-//Random R = new Random();
-//string Lang = "ENG";
-//string SID = string.Empty;
-//string CT = string.Empty;
-//string PCode = string.Empty;
-//int GoEwinLogin=0;
-string Version = EWinWeb.Version;
-//string LoginFailMessage = "";
-//if (CodingControl.FormSubmit()) {
-//    string LoginGUID = Request["LoginGUID"];
-//    string LoginPassword = Request["LoginPassword"];
-//    string LoginAccount = Request["LoginAccount"];
+    //string Token;
+    //int RValue;
+    //Random R = new Random();
+    //string Lang = "ENG";
+    //string SID = string.Empty;
+    //string CT = string.Empty;
+    string PCode = string.Empty;
+    //int GoEwinLogin=0;
+    string Version = EWinWeb.Version;
+    //string LoginFailMessage = "";
+    //if (CodingControl.FormSubmit()) {
+    //    string LoginGUID = Request["LoginGUID"];
+    //    string LoginPassword = Request["LoginPassword"];
+    //    string LoginAccount = Request["LoginAccount"];
 
 
-//    Newtonsoft.Json.Linq.JObject obj_FingerPrint = new Newtonsoft.Json.Linq.JObject();
+    //    Newtonsoft.Json.Linq.JObject obj_FingerPrint = new Newtonsoft.Json.Linq.JObject();
 
-//    string UserIP = CodingControl.GetUserIP();
-//    EWin.Login.LoginResult LoginAPIResult;
-//    EWin.Login.LoginAPI LoginAPI = new EWin.Login.LoginAPI();
-
-
-//    RValue = R.Next(100000, 9999999);
-//    Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
-
-//    LoginAPIResult = LoginAPI.UserLoginByCustomValidate(Token, LoginAccount, LoginPassword, EWinWeb.CompanyCode, UserIP);
+    //    string UserIP = CodingControl.GetUserIP();
+    //    EWin.Login.LoginResult LoginAPIResult;
+    //    EWin.Login.LoginAPI LoginAPI = new EWin.Login.LoginAPI();
 
 
-//    if (LoginAPIResult.ResultState == EWin.Login.enumResultState.OK) {
+    //    RValue = R.Next(100000, 9999999);
+    //    Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
 
-//        string EwinCallBackUrl;
-//        if ( CodingControl.GetIsHttps())
-//        {
-//            EwinCallBackUrl =  "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-//        }
-//        else {
-//            EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-//        }
-
-//        Response.SetCookie(new HttpCookie("RecoverToken", LoginAPIResult.RecoverToken) { Expires = System.DateTime.Parse("2038/12/31") });
-//        Response.SetCookie(new HttpCookie("LoginAccount", LoginAccount) { Expires = System.DateTime.Parse("2038/12/31") });
-//        Response.SetCookie(new HttpCookie("SID",LoginAPIResult.SID));
-//        Response.SetCookie(new HttpCookie("CT", LoginAPIResult.CT));
-//        Response.Redirect("RefreshParent.aspx?index.aspx");
-
-//    } else {
-//        LoginFailMessage = LoginAPIResult.Message;
-//        //Response.Write("<script>var defalutLoginAccount = '" + LoginAccount +"'; var defaultError = function(){ window.parent.showMessageOK('', mlp.getLanguageKey('登入失敗'),function () { })};</script>");
-//    }
-//}
+    //    LoginAPIResult = LoginAPI.UserLoginByCustomValidate(Token, LoginAccount, LoginPassword, EWinWeb.CompanyCode, UserIP);
 
 
-//if (string.IsNullOrEmpty(Request["SID"]) == false)
-//{
-//    SID = Request["SID"];
-//}
+    //    if (LoginAPIResult.ResultState == EWin.Login.enumResultState.OK) {
 
-//if (string.IsNullOrEmpty(Request["CT"]) == false)
-//    CT = Request["CT"];
+    //        string EwinCallBackUrl;
+    //        if ( CodingControl.GetIsHttps())
+    //        {
+    //            EwinCallBackUrl =  "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+    //        }
+    //        else {
+    //            EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+    //        }
 
-//if (string.IsNullOrEmpty(Request["GoEwinLogin"]) == false) {
-//    GoEwinLogin = int.Parse(Request["GoEwinLogin"]);
-//}
+    //        Response.SetCookie(new HttpCookie("RecoverToken", LoginAPIResult.RecoverToken) { Expires = System.DateTime.Parse("2038/12/31") });
+    //        Response.SetCookie(new HttpCookie("LoginAccount", LoginAccount) { Expires = System.DateTime.Parse("2038/12/31") });
+    //        Response.SetCookie(new HttpCookie("SID",LoginAPIResult.SID));
+    //        Response.SetCookie(new HttpCookie("CT", LoginAPIResult.CT));
+    //        Response.Redirect("RefreshParent.aspx?index.aspx");
 
-//if (string.IsNullOrEmpty(Request["PCode"]) == false) {
-//    PCode = Request["PCode"];
-//}
-
-//if (GoEwinLogin == 1) {
-//    string EwinCallBackUrl;
-
-//    if (CodingControl.GetIsHttps()) {
-//        EwinCallBackUrl = "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-//    } else {
-//        EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
-//    }
-//    Response.Redirect(EWinWeb.EWinGameUrl + "/Game/Login.aspx?CT=" +   HttpUtility.UrlEncode(CT)   + "&KeepLogin=0"  + "&Action=Custom" + "&Callback=" + HttpUtility.UrlEncode(EwinCallBackUrl) + "&CallbackHash=" + CodingControl.GetMD5(EwinCallBackUrl + EWinWeb.PrivateKey, false));
-//}
+    //    } else {
+    //        LoginFailMessage = LoginAPIResult.Message;
+    //        //Response.Write("<script>var defalutLoginAccount = '" + LoginAccount +"'; var defaultError = function(){ window.parent.showMessageOK('', mlp.getLanguageKey('登入失敗'),function () { })};</script>");
+    //    }
+    //}
 
 
+    //if (string.IsNullOrEmpty(Request["SID"]) == false)
+    //{
+    //    SID = Request["SID"];
+    //}
 
-//EWin.Lobby.LobbyAPI lobbyAPI = new EWin.Lobby.LobbyAPI();
+    //if (string.IsNullOrEmpty(Request["CT"]) == false)
+    //    CT = Request["CT"];
 
-//RValue = R.Next(100000, 9999999);
-//Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
+    //if (string.IsNullOrEmpty(Request["GoEwinLogin"]) == false) {
+    //    GoEwinLogin = int.Parse(Request["GoEwinLogin"]);
+    //}
 
-//if (string.IsNullOrEmpty(Request["Lang"]))
-//{
-//    string userLang = CodingControl.GetDefaultLanguage();
+    if (string.IsNullOrEmpty(Request["PCode"]) == false) {
+        PCode = Request["PCode"];
+    }
 
-//    if (userLang.ToUpper() == "zh-TW".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-HK".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-MO".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-CHT".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-CHS".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-SG".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh-CN".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "zh".ToUpper())
-//    {
-//        Lang = "CHT";
-//    }
-//    else if (userLang.ToUpper() == "en-US".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "en-CA".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "en-PH".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "en".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "ko-KR".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "ko-KP".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "ko".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else if (userLang.ToUpper() == "ja".ToUpper())
-//    {
-//        Lang = "ENG";
-//    }
-//    else { Lang = "ENG"; }
-//}
-//else
-//{
-//    Lang = Request["Lang"];
+    //if (GoEwinLogin == 1) {
+    //    string EwinCallBackUrl;
 
-//    Lang = Lang.ToUpper();
-//}
+    //    if (CodingControl.GetIsHttps()) {
+    //        EwinCallBackUrl = "https://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+    //    } else {
+    //        EwinCallBackUrl = "http://" + Request.Url.Authority + "/RefreshParent.aspx?index.aspx";
+    //    }
+    //    Response.Redirect(EWinWeb.EWinGameUrl + "/Game/Login.aspx?CT=" +   HttpUtility.UrlEncode(CT)   + "&KeepLogin=0"  + "&Action=Custom" + "&Callback=" + HttpUtility.UrlEncode(EwinCallBackUrl) + "&CallbackHash=" + CodingControl.GetMD5(EwinCallBackUrl + EWinWeb.PrivateKey, false));
+    //}
+
+
+
+    //EWin.Lobby.LobbyAPI lobbyAPI = new EWin.Lobby.LobbyAPI();
+
+    //RValue = R.Next(100000, 9999999);
+    //Token = EWinWeb.CreateToken(EWinWeb.PrivateKey, EWinWeb.APIKey, RValue.ToString());
+
+    //if (string.IsNullOrEmpty(Request["Lang"]))
+    //{
+    //    string userLang = CodingControl.GetDefaultLanguage();
+
+    //    if (userLang.ToUpper() == "zh-TW".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-HK".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-MO".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-CHT".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-CHS".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-SG".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh-CN".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "zh".ToUpper())
+    //    {
+    //        Lang = "CHT";
+    //    }
+    //    else if (userLang.ToUpper() == "en-US".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "en-CA".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "en-PH".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "en".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "ko-KR".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "ko-KP".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "ko".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else if (userLang.ToUpper() == "ja".ToUpper())
+    //    {
+    //        Lang = "ENG";
+    //    }
+    //    else { Lang = "ENG"; }
+    //}
+    //else
+    //{
+    //    Lang = Request["Lang"];
+
+    //    Lang = Lang.ToUpper();
+    //}
 
 %>
 <!doctype html>
@@ -242,6 +242,7 @@ string Version = EWinWeb.Version;
     var MessageModal;
     var needCheckLogin = false;
     var gameWindow;
+    var PCode = "<%=PCode%>";
     var EWinWebInfo = {
         EWinUrl: "<%=EWinWeb.EWinUrl %>",
         ImageUrl: "<%=EWinWeb.ImageUrl %>",
@@ -928,6 +929,13 @@ string Version = EWinWeb.Version;
         $('#ModalLanguage').modal('show');
     }
 
+    function SignUp() {
+        if (PCode == "") {
+            window.location.href = "https://luckysprite.ph/index.aspx?page=Register";
+        } else {
+            window.location.href = "https://luckysprite.ph/index.aspx?page=Register&PCode=" + PCode;
+        }
+    }
 
     window.onload = init;
 </script>
@@ -1012,7 +1020,7 @@ string Version = EWinWeb.Version;
                                 <ul class="nav header_setting_content">
                                     <!-- ==== 導入正式站 ====-->
                                     <li class="register">
-                                        <button onclick="location.href='https://luckysprite.ph/index.aspx?page=Register';" class="btn-register" type="button"> 
+                                                  <button onclick="SignUp()" class="btn-register" type="button"> 
                                             <span class="language_replace" langkey="前往正式站">SignUp</span></button>
                                     </li>
                                     <!-- ==== 登入前 ====-->
