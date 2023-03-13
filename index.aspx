@@ -1012,7 +1012,7 @@ string Version = EWinWeb.Version;
                                 <ul class="nav header_setting_content">
                                     <!-- ==== 導入正式站 ====-->
                                     <li class="register">
-                                        <button onclick="location.href='https://luckysprite.ph/index.aspx?page=Register';" class="btn-register" type="button">
+                                        <button onclick="location.href='https://luckysprite.ph/index.aspx?page=Register';" class="btn-register" type="button"> 
                                             <span class="language_replace" langkey="前往正式站">SignUp</span></button>
                                     </li>
                                     <!-- ==== 登入前 ====-->
